@@ -1,0 +1,702 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "PenNavAR",
+    "printedName": "PenNavAR",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PenNavAR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ARKit",
+        "printedName": "ARKit",
+        "declKind": "Import",
+        "moduleName": "PenNavAR"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PenNavARManager",
+        "printedName": "PenNavARManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PenNavARManager",
+                "printedName": "PenNavAR.PenNavARManager",
+                "usr": "c:@M@PenNavAR@objc(cs)PenNavARManager"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PenNavAR0aB9ARManagerC6sharedACvpZ",
+            "mangledName": "$s8PenNavAR0aB9ARManagerC6sharedACvpZ",
+            "moduleName": "PenNavAR",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PenNavARManager",
+                    "printedName": "PenNavAR.PenNavARManager",
+                    "usr": "c:@M@PenNavAR@objc(cs)PenNavARManager"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PenNavAR0aB9ARManagerC6sharedACvgZ",
+                "mangledName": "$s8PenNavAR0aB9ARManagerC6sharedACvgZ",
+                "moduleName": "PenNavAR",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PenNavARManager",
+                    "printedName": "PenNavAR.PenNavARManager",
+                    "usr": "c:@M@PenNavAR@objc(cs)PenNavARManager"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PenNavAR0aB9ARManagerC6sharedACvsZ",
+                "mangledName": "$s8PenNavAR0aB9ARManagerC6sharedACvsZ",
+                "moduleName": "PenNavAR",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PenNavAR0aB9ARManagerC6sharedACvMZ",
+                "mangledName": "$s8PenNavAR0aB9ARManagerC6sharedACvMZ",
+                "moduleName": "PenNavAR",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "startRendering",
+            "printedName": "startRendering(in:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PenNavAR0aB9ARManagerC14startRendering2in10completionySo6UIViewC_ySbctF",
+            "mangledName": "$s8PenNavAR0aB9ARManagerC14startRendering2in10completionySo6UIViewC_ySbctF",
+            "moduleName": "PenNavAR",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopRendering",
+            "printedName": "stopRendering()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PenNavAR0aB9ARManagerC13stopRenderingyyF",
+            "mangledName": "$s8PenNavAR0aB9ARManagerC13stopRenderingyyF",
+            "moduleName": "PenNavAR",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLocale",
+            "printedName": "setLocale(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Locale?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Locale",
+                    "printedName": "Foundation.Locale",
+                    "usr": "s:10Foundation6LocaleV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PenNavAR0aB9ARManagerC9setLocaleyy10Foundation0F0VSgF",
+            "mangledName": "$s8PenNavAR0aB9ARManagerC9setLocaleyy10Foundation0F0VSgF",
+            "moduleName": "PenNavAR",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PenNavARManager",
+                "printedName": "PenNavAR.PenNavARManager",
+                "usr": "c:@M@PenNavAR@objc(cs)PenNavARManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PenNavAR@objc(cs)PenNavARManager(im)init",
+            "mangledName": "$s8PenNavAR0aB9ARManagerCACycfc",
+            "moduleName": "PenNavAR",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "renderer",
+            "printedName": "renderer(_:didAdd:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SCNSceneRenderer",
+                "printedName": "any SceneKit.SCNSceneRenderer",
+                "usr": "c:objc(pl)SCNSceneRenderer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SCNNode",
+                "printedName": "SceneKit.SCNNode",
+                "usr": "c:objc(cs)SCNNode"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ARAnchor",
+                "printedName": "ARKit.ARAnchor",
+                "usr": "c:objc(cs)ARAnchor"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PenNavAR@objc(cs)PenNavARManager(im)renderer:didAddNode:forAnchor:",
+            "mangledName": "$s8PenNavAR0aB9ARManagerC8renderer_6didAdd3forySo16SCNSceneRenderer_p_So7SCNNodeCSo8ARAnchorCtF",
+            "moduleName": "PenNavAR",
+            "objc_name": "renderer:didAddNode:forAnchor:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "renderer",
+            "printedName": "renderer(_:didUpdate:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SCNSceneRenderer",
+                "printedName": "any SceneKit.SCNSceneRenderer",
+                "usr": "c:objc(pl)SCNSceneRenderer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SCNNode",
+                "printedName": "SceneKit.SCNNode",
+                "usr": "c:objc(cs)SCNNode"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ARAnchor",
+                "printedName": "ARKit.ARAnchor",
+                "usr": "c:objc(cs)ARAnchor"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PenNavAR@objc(cs)PenNavARManager(im)renderer:didUpdateNode:forAnchor:",
+            "mangledName": "$s8PenNavAR0aB9ARManagerC8renderer_9didUpdate3forySo16SCNSceneRenderer_p_So7SCNNodeCSo8ARAnchorCtF",
+            "moduleName": "PenNavAR",
+            "objc_name": "renderer:didUpdateNode:forAnchor:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "session",
+            "printedName": "session(_:didAdd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ARSession",
+                "printedName": "ARKit.ARSession",
+                "usr": "c:objc(cs)ARSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ARKit.ARAnchor]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ARAnchor",
+                    "printedName": "ARKit.ARAnchor",
+                    "usr": "c:objc(cs)ARAnchor"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PenNavAR@objc(cs)PenNavARManager(im)session:didAddAnchors:",
+            "mangledName": "$s8PenNavAR0aB9ARManagerC7session_6didAddySo9ARSessionC_SaySo8ARAnchorCGtF",
+            "moduleName": "PenNavAR",
+            "objc_name": "session:didAddAnchors:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "session",
+            "printedName": "session(_:didRemove:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ARSession",
+                "printedName": "ARKit.ARSession",
+                "usr": "c:objc(cs)ARSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ARKit.ARAnchor]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ARAnchor",
+                    "printedName": "ARKit.ARAnchor",
+                    "usr": "c:objc(cs)ARAnchor"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PenNavAR@objc(cs)PenNavARManager(im)session:didRemoveAnchors:",
+            "mangledName": "$s8PenNavAR0aB9ARManagerC7session_9didRemoveySo9ARSessionC_SaySo8ARAnchorCGtF",
+            "moduleName": "PenNavAR",
+            "objc_name": "session:didRemoveAnchors:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "session",
+            "printedName": "session(_:cameraDidChangeTrackingState:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ARSession",
+                "printedName": "ARKit.ARSession",
+                "usr": "c:objc(cs)ARSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ARCamera",
+                "printedName": "ARKit.ARCamera",
+                "usr": "c:objc(cs)ARCamera"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PenNavAR@objc(cs)PenNavARManager(im)session:cameraDidChangeTrackingState:",
+            "mangledName": "$s8PenNavAR0aB9ARManagerC7session_28cameraDidChangeTrackingStateySo9ARSessionC_So8ARCameraCtF",
+            "moduleName": "PenNavAR",
+            "objc_name": "session:cameraDidChangeTrackingState:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sessionWasInterrupted",
+            "printedName": "sessionWasInterrupted(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ARSession",
+                "printedName": "ARKit.ARSession",
+                "usr": "c:objc(cs)ARSession"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PenNavAR@objc(cs)PenNavARManager(im)sessionWasInterrupted:",
+            "mangledName": "$s8PenNavAR0aB9ARManagerC21sessionWasInterruptedyySo9ARSessionCF",
+            "moduleName": "PenNavAR",
+            "objc_name": "sessionWasInterrupted:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sessionInterruptionEnded",
+            "printedName": "sessionInterruptionEnded(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ARSession",
+                "printedName": "ARKit.ARSession",
+                "usr": "c:objc(cs)ARSession"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PenNavAR@objc(cs)PenNavARManager(im)sessionInterruptionEnded:",
+            "mangledName": "$s8PenNavAR0aB9ARManagerC24sessionInterruptionEndedyySo9ARSessionCF",
+            "moduleName": "PenNavAR",
+            "objc_name": "sessionInterruptionEnded:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "session",
+            "printedName": "session(_:didFailWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ARSession",
+                "printedName": "ARKit.ARSession",
+                "usr": "c:objc(cs)ARSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PenNavAR@objc(cs)PenNavARManager(im)session:didFailWithError:",
+            "mangledName": "$s8PenNavAR0aB9ARManagerC7session_16didFailWithErrorySo9ARSessionC_s0I0_ptF",
+            "moduleName": "PenNavAR",
+            "objc_name": "session:didFailWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PenNavAR@objc(cs)PenNavARManager",
+        "mangledName": "$s8PenNavAR0aB9ARManagerC",
+        "moduleName": "PenNavAR",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PenNavAR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ARKit",
+        "printedName": "ARKit",
+        "declKind": "Import",
+        "moduleName": "PenNavAR"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PenNavAR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ARKit",
+        "printedName": "ARKit",
+        "declKind": "Import",
+        "moduleName": "PenNavAR"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PenNavAR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ARKit",
+        "printedName": "ARKit",
+        "declKind": "Import",
+        "moduleName": "PenNavAR"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenNavAR\/PenNavAR\/PenNavARManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 361,
+      "length": 4,
+      "value": "true"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+framework module Penguin {
+  umbrella header "Penguin.h"
+  export *
+
+  module * { export * }
+}
+
+module Penguin.Swift {
+  header "Penguin-Swift.h"
+  requires objc
+}

@@ -1,0 +1,11 @@
+framework module PenguinINRenderer {
+  umbrella header "PenguinINRenderer.h"
+  export *
+
+  module * { export * }
+}
+
+module PenguinINRenderer.Swift {
+  header "PenguinINRenderer-Swift.h"
+  requires objc
+}

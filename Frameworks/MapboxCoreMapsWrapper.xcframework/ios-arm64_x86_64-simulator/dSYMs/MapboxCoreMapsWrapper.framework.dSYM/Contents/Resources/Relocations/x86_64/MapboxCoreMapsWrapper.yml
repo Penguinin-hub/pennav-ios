@@ -1,0 +1,5 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/fawzialrifai/Downloads/mapbox-navigation-ios-kried-framework-build-2/.build/scipio/DerivedData/Products/Release-iphonesimulator/MapboxCoreMapsWrapper.framework/MapboxCoreMapsWrapper'
+relocations:     []
+...
