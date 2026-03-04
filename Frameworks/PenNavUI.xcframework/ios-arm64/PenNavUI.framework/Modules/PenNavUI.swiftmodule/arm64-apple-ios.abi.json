@@ -21687,6 +21687,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "Anchorable",
+            "printedName": "Anchorable",
+            "usr": "s:24_MapboxNavigationHelpers10AnchorableP",
+            "mangledName": "$s24_MapboxNavigationHelpers10AnchorableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -24550,6 +24557,13 @@
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Anchorable",
+            "printedName": "Anchorable",
+            "usr": "s:24_MapboxNavigationHelpers10AnchorableP",
+            "mangledName": "$s24_MapboxNavigationHelpers10AnchorableP"
           },
           {
             "kind": "Conformance",
@@ -32203,6 +32217,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "Anchorable",
+            "printedName": "Anchorable",
+            "usr": "s:24_MapboxNavigationHelpers10AnchorableP",
+            "mangledName": "$s24_MapboxNavigationHelpers10AnchorableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -34575,6 +34596,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Anchorable",
+            "printedName": "Anchorable",
+            "usr": "s:24_MapboxNavigationHelpers10AnchorableP",
+            "mangledName": "$s24_MapboxNavigationHelpers10AnchorableP"
           }
         ]
       },
@@ -34680,6 +34708,13 @@
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Anchorable",
+            "printedName": "Anchorable",
+            "usr": "s:24_MapboxNavigationHelpers10AnchorableP",
+            "mangledName": "$s24_MapboxNavigationHelpers10AnchorableP"
           }
         ]
       },
