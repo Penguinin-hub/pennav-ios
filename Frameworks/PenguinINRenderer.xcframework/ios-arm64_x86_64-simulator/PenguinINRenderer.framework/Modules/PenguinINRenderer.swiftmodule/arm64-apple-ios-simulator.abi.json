@@ -58,12 +58,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "CoreLocation.CLLocationCoordinate2D?",
+                "printedName": "_LocationEssentials.CLLocationCoordinate2D?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "CLLocationCoordinate2D",
-                    "printedName": "CoreLocation.CLLocationCoordinate2D",
+                    "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                     "usr": "c:@S@CLLocationCoordinate2D"
                   }
                 ],
@@ -89,12 +89,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "CoreLocation.CLLocationCoordinate2D?",
+                    "printedName": "_LocationEssentials.CLLocationCoordinate2D?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "CLLocationCoordinate2D",
-                        "printedName": "CoreLocation.CLLocationCoordinate2D",
+                        "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                         "usr": "c:@S@CLLocationCoordinate2D"
                       }
                     ],
@@ -121,12 +121,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "CoreLocation.CLLocationCoordinate2D?",
+                    "printedName": "_LocationEssentials.CLLocationCoordinate2D?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "CLLocationCoordinate2D",
-                        "printedName": "CoreLocation.CLLocationCoordinate2D",
+                        "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                         "usr": "c:@S@CLLocationCoordinate2D"
                       }
                     ],
@@ -168,17 +168,17 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[CoreLocation.CLLocationCoordinate2D]?",
+                "printedName": "[_LocationEssentials.CLLocationCoordinate2D]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[CoreLocation.CLLocationCoordinate2D]",
+                    "printedName": "[_LocationEssentials.CLLocationCoordinate2D]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "CLLocationCoordinate2D",
-                        "printedName": "CoreLocation.CLLocationCoordinate2D",
+                        "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                         "usr": "c:@S@CLLocationCoordinate2D"
                       }
                     ],
@@ -207,17 +207,17 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[CoreLocation.CLLocationCoordinate2D]?",
+                    "printedName": "[_LocationEssentials.CLLocationCoordinate2D]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Array",
-                        "printedName": "[CoreLocation.CLLocationCoordinate2D]",
+                        "printedName": "[_LocationEssentials.CLLocationCoordinate2D]",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "CLLocationCoordinate2D",
-                            "printedName": "CoreLocation.CLLocationCoordinate2D",
+                            "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                             "usr": "c:@S@CLLocationCoordinate2D"
                           }
                         ],
@@ -247,17 +247,17 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[CoreLocation.CLLocationCoordinate2D]?",
+                    "printedName": "[_LocationEssentials.CLLocationCoordinate2D]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Array",
-                        "printedName": "[CoreLocation.CLLocationCoordinate2D]",
+                        "printedName": "[_LocationEssentials.CLLocationCoordinate2D]",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "CLLocationCoordinate2D",
-                            "printedName": "CoreLocation.CLLocationCoordinate2D",
+                            "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                             "usr": "c:@S@CLLocationCoordinate2D"
                           }
                         ],
@@ -1655,12 +1655,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "CoreLocation.CLLocationCoordinate2D?",
+                "printedName": "_LocationEssentials.CLLocationCoordinate2D?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "CLLocationCoordinate2D",
-                    "printedName": "CoreLocation.CLLocationCoordinate2D",
+                    "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                     "usr": "c:@S@CLLocationCoordinate2D"
                   }
                 ],
@@ -1670,17 +1670,17 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[CoreLocation.CLLocationCoordinate2D]?",
+                "printedName": "[_LocationEssentials.CLLocationCoordinate2D]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[CoreLocation.CLLocationCoordinate2D]",
+                    "printedName": "[_LocationEssentials.CLLocationCoordinate2D]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "CLLocationCoordinate2D",
-                        "printedName": "CoreLocation.CLLocationCoordinate2D",
+                        "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                         "usr": "c:@S@CLLocationCoordinate2D"
                       }
                     ],
@@ -1995,7 +1995,7 @@
           {
             "kind": "Function",
             "name": "startRendering",
-            "printedName": "startRendering(in:centerCoordinate:defaultAssetStorage:guidelineLayerIds:eventsDelegate:completion:)",
+            "printedName": "startRendering(in:centerCoordinate:assetsUrl:guidelineLayerIds:eventsDelegate:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2011,12 +2011,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "CoreLocation.CLLocationCoordinate2D?",
+                "printedName": "_LocationEssentials.CLLocationCoordinate2D?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "CLLocationCoordinate2D",
-                    "printedName": "CoreLocation.CLLocationCoordinate2D",
+                    "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                     "usr": "c:@S@CLLocationCoordinate2D"
                   }
                 ],
@@ -2024,9 +2024,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
               },
               {
                 "kind": "TypeNominal",
@@ -2084,8 +2084,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17PenguinINRenderer10PIRendererC14startRendering2in16centerCoordinate19defaultAssetStorage17guidelineLayerIds14eventsDelegate10completionySo6UIViewC_So22CLLocationCoordinate2DVSgSSSaySSGAA014PIMapViewEventP0_pSgyycSgtF",
-            "mangledName": "$s17PenguinINRenderer10PIRendererC14startRendering2in16centerCoordinate19defaultAssetStorage17guidelineLayerIds14eventsDelegate10completionySo6UIViewC_So22CLLocationCoordinate2DVSgSSSaySSGAA014PIMapViewEventP0_pSgyycSgtF",
+            "usr": "s:17PenguinINRenderer10PIRendererC14startRendering2in16centerCoordinate9assetsUrl17guidelineLayerIds14eventsDelegate10completionySo6UIViewC_So22CLLocationCoordinate2DVSg10Foundation3URLVSaySSGAA014PIMapViewEventO0_pSgyycSgtF",
+            "mangledName": "$s17PenguinINRenderer10PIRendererC14startRendering2in16centerCoordinate9assetsUrl17guidelineLayerIds14eventsDelegate10completionySo6UIViewC_So22CLLocationCoordinate2DVSg10Foundation3URLVSaySSGAA014PIMapViewEventO0_pSgyycSgtF",
             "moduleName": "PenguinINRenderer",
             "declAttributes": [
               "Final",
@@ -2118,8 +2118,8 @@
           },
           {
             "kind": "Function",
-            "name": "setCompassViewPosition",
-            "printedName": "setCompassViewPosition(margins:)",
+            "name": "setCompassMargins",
+            "printedName": "setCompassMargins(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2134,8 +2134,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17PenguinINRenderer10PIRendererC22setCompassViewPosition7marginsySo7CGPointV_tF",
-            "mangledName": "$s17PenguinINRenderer10PIRendererC22setCompassViewPosition7marginsySo7CGPointV_tF",
+            "usr": "s:17PenguinINRenderer10PIRendererC17setCompassMarginsyySo7CGPointVF",
+            "mangledName": "$s17PenguinINRenderer10PIRendererC17setCompassMarginsyySo7CGPointVF",
             "moduleName": "PenguinINRenderer",
             "declAttributes": [
               "Final",
@@ -2175,7 +2175,7 @@
           {
             "kind": "Function",
             "name": "setCompassImage",
-            "printedName": "setCompassImage(image:)",
+            "printedName": "setCompassImage(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2190,8 +2190,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17PenguinINRenderer10PIRendererC15setCompassImage5imageySo7UIImageC_tF",
-            "mangledName": "$s17PenguinINRenderer10PIRendererC15setCompassImage5imageySo7UIImageC_tF",
+            "usr": "s:17PenguinINRenderer10PIRendererC15setCompassImageyySo7UIImageCF",
+            "mangledName": "$s17PenguinINRenderer10PIRendererC15setCompassImageyySo7UIImageCF",
             "moduleName": "PenguinINRenderer",
             "declAttributes": [
               "Final",
@@ -2240,9 +2240,17 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "UIEdgeInsets",
-                "printedName": "UIKit.UIEdgeInsets",
-                "usr": "c:@S@UIEdgeInsets"
+                "name": "Optional",
+                "printedName": "UIKit.UIEdgeInsets?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIEdgeInsets",
+                    "printedName": "UIKit.UIEdgeInsets",
+                    "usr": "c:@S@UIEdgeInsets"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2259,8 +2267,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17PenguinINRenderer10PIRendererC13setMapPadding_8animated8durationySo12UIEdgeInsetsV_SbSdtF",
-            "mangledName": "$s17PenguinINRenderer10PIRendererC13setMapPadding_8animated8durationySo12UIEdgeInsetsV_SbSdtF",
+            "usr": "s:17PenguinINRenderer10PIRendererC13setMapPadding_8animated8durationySo12UIEdgeInsetsVSg_SbSdtF",
+            "mangledName": "$s17PenguinINRenderer10PIRendererC13setMapPadding_8animated8durationySo12UIEdgeInsetsVSg_SbSdtF",
             "moduleName": "PenguinINRenderer",
             "declAttributes": [
               "Final",
@@ -2338,17 +2346,17 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[CoreLocation.CLLocationCoordinate2D]?",
+                "printedName": "[_LocationEssentials.CLLocationCoordinate2D]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[CoreLocation.CLLocationCoordinate2D]",
+                    "printedName": "[_LocationEssentials.CLLocationCoordinate2D]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "CLLocationCoordinate2D",
-                        "printedName": "CoreLocation.CLLocationCoordinate2D",
+                        "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                         "usr": "c:@S@CLLocationCoordinate2D"
                       }
                     ],
@@ -2409,9 +2417,17 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2422,8 +2438,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17PenguinINRenderer10PIRendererC11setMapPitch_8durationySd_SdtF",
-            "mangledName": "$s17PenguinINRenderer10PIRendererC11setMapPitch_8durationySd_SdtF",
+            "usr": "s:17PenguinINRenderer10PIRendererC11setMapPitch_8durationy14CoreFoundation7CGFloatVSg_SdtF",
+            "mangledName": "$s17PenguinINRenderer10PIRendererC11setMapPitch_8durationy12CoreGraphics7CGFloatVSg_SdtF",
             "moduleName": "PenguinINRenderer",
             "declAttributes": [
               "Final",
@@ -2532,9 +2548,17 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2544,8 +2568,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17PenguinINRenderer10PIRendererC27setLocationIndicatorBearing_7layerIdySd_SStF",
-            "mangledName": "$s17PenguinINRenderer10PIRendererC27setLocationIndicatorBearing_7layerIdySd_SStF",
+            "usr": "s:17PenguinINRenderer10PIRendererC27setLocationIndicatorBearing_7layerIdySdSg_SStF",
+            "mangledName": "$s17PenguinINRenderer10PIRendererC27setLocationIndicatorBearing_7layerIdySdSg_SStF",
             "moduleName": "PenguinINRenderer",
             "declAttributes": [
               "Final",
@@ -2587,34 +2611,6 @@
             "declKind": "Func",
             "usr": "s:17PenguinINRenderer10PIRendererC24setLocationIndicatorSize_7layerIdyypSg_SStF",
             "mangledName": "$s17PenguinINRenderer10PIRendererC24setLocationIndicatorSize_7layerIdyypSg_SStF",
-            "moduleName": "PenguinINRenderer",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "addAccuracyCircle",
-            "printedName": "addAccuracyCircle(layerConfiguration:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "LayerConfiguration",
-                "printedName": "PenguinINRenderer.LayerConfiguration",
-                "usr": "s:17PenguinINRenderer18LayerConfigurationC"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17PenguinINRenderer10PIRendererC17addAccuracyCircle18layerConfigurationyAA05LayerH0C_tF",
-            "mangledName": "$s17PenguinINRenderer10PIRendererC17addAccuracyCircle18layerConfigurationyAA05LayerH0C_tF",
             "moduleName": "PenguinINRenderer",
             "declAttributes": [
               "Final",
@@ -2783,8 +2779,8 @@
           },
           {
             "kind": "Function",
-            "name": "setLocationProviderCoordinate",
-            "printedName": "setLocationProviderCoordinate(_:skipsIntermediateCoordinates:)",
+            "name": "setUserLocationCoordinate",
+            "printedName": "setUserLocationCoordinate(location:animated:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2793,9 +2789,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "CLLocationCoordinate2D",
-                "printedName": "CoreLocation.CLLocationCoordinate2D",
-                "usr": "c:@S@CLLocationCoordinate2D"
+                "name": "CLLocation",
+                "printedName": "_LocationEssentials.CLLocation",
+                "usr": "c:objc(cs)CLLocation"
               },
               {
                 "kind": "TypeNominal",
@@ -2806,8 +2802,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17PenguinINRenderer10PIRendererC29setLocationProviderCoordinate_28skipsIntermediateCoordinatesySo22CLLocationCoordinate2DV_SbtF",
-            "mangledName": "$s17PenguinINRenderer10PIRendererC29setLocationProviderCoordinate_28skipsIntermediateCoordinatesySo22CLLocationCoordinate2DV_SbtF",
+            "usr": "s:17PenguinINRenderer10PIRendererC25setUserLocationCoordinate8location8animatedySo10CLLocationC_SbtF",
+            "mangledName": "$s17PenguinINRenderer10PIRendererC25setUserLocationCoordinate8location8animatedySo10CLLocationC_SbtF",
             "moduleName": "PenguinINRenderer",
             "declAttributes": [
               "Final",
@@ -2818,8 +2814,42 @@
           },
           {
             "kind": "Function",
+            "name": "setUserLocationBearing",
+            "printedName": "setUserLocationBearing(location:animated:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocation",
+                "printedName": "_LocationEssentials.CLLocation",
+                "usr": "c:objc(cs)CLLocation"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17PenguinINRenderer10PIRendererC22setUserLocationBearing8location8animatedySo10CLLocationC_SbtF",
+            "mangledName": "$s17PenguinINRenderer10PIRendererC22setUserLocationBearing8location8animatedySo10CLLocationC_SbtF",
+            "moduleName": "PenguinINRenderer",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setLocationIndicatorCoordinate",
-            "printedName": "setLocationIndicatorCoordinate(_:layerId:)",
+            "printedName": "setLocationIndicatorCoordinate(_:layerId:animated:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2829,7 +2859,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "CLLocationCoordinate2D",
-                "printedName": "CoreLocation.CLLocationCoordinate2D",
+                "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                 "usr": "c:@S@CLLocationCoordinate2D"
               },
               {
@@ -2837,11 +2867,17 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:17PenguinINRenderer10PIRendererC30setLocationIndicatorCoordinate_7layerIdySo22CLLocationCoordinate2DV_SStF",
-            "mangledName": "$s17PenguinINRenderer10PIRendererC30setLocationIndicatorCoordinate_7layerIdySo22CLLocationCoordinate2DV_SStF",
+            "usr": "s:17PenguinINRenderer10PIRendererC30setLocationIndicatorCoordinate_7layerId8animatedySo22CLLocationCoordinate2DV_SSSbtF",
+            "mangledName": "$s17PenguinINRenderer10PIRendererC30setLocationIndicatorCoordinate_7layerId8animatedySo22CLLocationCoordinate2DV_SSSbtF",
             "moduleName": "PenguinINRenderer",
             "declAttributes": [
               "Final",
@@ -2863,7 +2899,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "CLLocationCoordinate2D",
-                "printedName": "CoreLocation.CLLocationCoordinate2D",
+                "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                 "usr": "c:@S@CLLocationCoordinate2D"
               },
               {
@@ -3027,12 +3063,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "CoreLocation.CLLocationCoordinate2D?",
+                "printedName": "_LocationEssentials.CLLocationCoordinate2D?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "CLLocationCoordinate2D",
-                    "printedName": "CoreLocation.CLLocationCoordinate2D",
+                    "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                     "usr": "c:@S@CLLocationCoordinate2D"
                   }
                 ],
@@ -3093,7 +3129,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "CLLocationCoordinate2D",
-                "printedName": "CoreLocation.CLLocationCoordinate2D",
+                "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                 "usr": "c:@S@CLLocationCoordinate2D"
               }
             ],
@@ -3111,7 +3147,7 @@
           {
             "kind": "Function",
             "name": "setCamera",
-            "printedName": "setCamera(configuration:completion:)",
+            "printedName": "setCamera(to:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3152,8 +3188,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17PenguinINRenderer10PIRendererC9setCamera13configuration10completionyAA0E13ConfigurationV_yycSgtF",
-            "mangledName": "$s17PenguinINRenderer10PIRendererC9setCamera13configuration10completionyAA0E13ConfigurationV_yycSgtF",
+            "usr": "s:17PenguinINRenderer10PIRendererC9setCamera2to10completionyAA0E13ConfigurationV_yycSgtF",
+            "mangledName": "$s17PenguinINRenderer10PIRendererC9setCamera2to10completionyAA0E13ConfigurationV_yycSgtF",
             "moduleName": "PenguinINRenderer",
             "declAttributes": [
               "Final",
@@ -3193,7 +3229,7 @@
           {
             "kind": "Function",
             "name": "drawMap",
-            "printedName": "drawMap(id:mapUri:showOverlay:layerConfiguration:drawsExtrudedPolygons:completion:)",
+            "printedName": "drawMap(id:mapUri:showsOverlay:layerConfiguration:drawsExtrudedPolygons:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3276,8 +3312,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17PenguinINRenderer10PIRendererC7drawMap2id6mapUri11showOverlay18layerConfiguration21drawsExtrudedPolygons10completionySS_SSSgSbSgAA05LayerL0CSbySbcSgtF",
-            "mangledName": "$s17PenguinINRenderer10PIRendererC7drawMap2id6mapUri11showOverlay18layerConfiguration21drawsExtrudedPolygons10completionySS_SSSgSbSgAA05LayerL0CSbySbcSgtF",
+            "usr": "s:17PenguinINRenderer10PIRendererC7drawMap2id6mapUri12showsOverlay18layerConfiguration21drawsExtrudedPolygons10completionySS_SSSgSbSgAA05LayerL0CSbySbcSgtF",
+            "mangledName": "$s17PenguinINRenderer10PIRendererC7drawMap2id6mapUri12showsOverlay18layerConfiguration21drawsExtrudedPolygons10completionySS_SSSgSbSgAA05LayerL0CSbySbcSgtF",
             "moduleName": "PenguinINRenderer",
             "declAttributes": [
               "Final",
@@ -3379,32 +3415,40 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[CoreLocation.CLLocationCoordinate2D]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CLLocationCoordinate2D",
-                    "printedName": "CoreLocation.CLLocationCoordinate2D",
-                    "usr": "c:@S@CLLocationCoordinate2D"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[CoreLocation.CLLocationCoordinate2D]?",
+                "printedName": "[_LocationEssentials.CLLocationCoordinate2D]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[CoreLocation.CLLocationCoordinate2D]",
+                    "printedName": "[_LocationEssentials.CLLocationCoordinate2D]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "CLLocationCoordinate2D",
-                        "printedName": "CoreLocation.CLLocationCoordinate2D",
+                        "printedName": "_LocationEssentials.CLLocationCoordinate2D",
+                        "usr": "c:@S@CLLocationCoordinate2D"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[_LocationEssentials.CLLocationCoordinate2D]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[_LocationEssentials.CLLocationCoordinate2D]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLLocationCoordinate2D",
+                        "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                         "usr": "c:@S@CLLocationCoordinate2D"
                       }
                     ],
@@ -3439,8 +3483,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17PenguinINRenderer10PIRendererC16addManeuverArrow2at20guidelineCoordinates2id5color5width0H7LayerIdySaySo22CLLocationCoordinate2DVG_AMSgSSSo7UIColorCSdSStF",
-            "mangledName": "$s17PenguinINRenderer10PIRendererC16addManeuverArrow2at20guidelineCoordinates2id5color5width0H7LayerIdySaySo22CLLocationCoordinate2DVG_AMSgSSSo7UIColorCSdSStF",
+            "usr": "s:17PenguinINRenderer10PIRendererC16addManeuverArrow2at20guidelineCoordinates2id5color5width0H7LayerIdySaySo22CLLocationCoordinate2DVGSg_ANSSSo7UIColorCSdSStF",
+            "mangledName": "$s17PenguinINRenderer10PIRendererC16addManeuverArrow2at20guidelineCoordinates2id5color5width0H7LayerIdySaySo22CLLocationCoordinate2DVGSg_ANSSSo7UIColorCSdSStF",
             "moduleName": "PenguinINRenderer",
             "declAttributes": [
               "Final",
@@ -4406,7 +4450,7 @@
           {
             "kind": "Function",
             "name": "addLines",
-            "printedName": "addLines(_:layerConfiguration:)",
+            "printedName": "addLines(_:layerConfiguration:removesExistingLines:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4432,11 +4476,18 @@
                 "name": "LayerConfiguration",
                 "printedName": "PenguinINRenderer.LayerConfiguration",
                 "usr": "s:17PenguinINRenderer18LayerConfigurationC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:17PenguinINRenderer10PIRendererC8addLines_18layerConfigurationySayAA07FeatureG0VG_AA05LayerG0CtF",
-            "mangledName": "$s17PenguinINRenderer10PIRendererC8addLines_18layerConfigurationySayAA07FeatureG0VG_AA05LayerG0CtF",
+            "usr": "s:17PenguinINRenderer10PIRendererC8addLines_18layerConfiguration015removesExistingE0ySayAA07FeatureG0VG_AA05LayerG0CSbtF",
+            "mangledName": "$s17PenguinINRenderer10PIRendererC8addLines_18layerConfiguration015removesExistingE0ySayAA07FeatureG0VG_AA05LayerG0CSbtF",
             "moduleName": "PenguinINRenderer",
             "declAttributes": [
               "Final",
@@ -4500,12 +4551,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "CoreLocation.CLLocationCoordinate2D?",
+                "printedName": "_LocationEssentials.CLLocationCoordinate2D?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "CLLocationCoordinate2D",
-                    "printedName": "CoreLocation.CLLocationCoordinate2D",
+                    "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                     "usr": "c:@S@CLLocationCoordinate2D"
                   }
                 ],
@@ -4541,7 +4592,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "CLLocationCoordinate2D",
-                "printedName": "CoreLocation.CLLocationCoordinate2D",
+                "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                 "usr": "c:@S@CLLocationCoordinate2D"
               },
               {
@@ -4559,6 +4610,115 @@
               "Final",
               "AccessControl",
               "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancelCameraAnimations",
+            "printedName": "cancelCameraAnimations()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17PenguinINRenderer10PIRendererC22cancelCameraAnimationsyyF",
+            "mangledName": "$s17PenguinINRenderer10PIRendererC22cancelCameraAnimationsyyF",
+            "moduleName": "PenguinINRenderer",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isCameraAnimating",
+            "printedName": "isCameraAnimating()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17PenguinINRenderer10PIRendererC17isCameraAnimatingSbyF",
+            "mangledName": "$s17PenguinINRenderer10PIRendererC17isCameraAnimatingSbyF",
+            "moduleName": "PenguinINRenderer",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getClosestCoordinate",
+            "printedName": "getClosestCoordinate(from:to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "_LocationEssentials.CLLocationCoordinate2D?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLLocationCoordinate2D",
+                    "printedName": "_LocationEssentials.CLLocationCoordinate2D",
+                    "usr": "c:@S@CLLocationCoordinate2D"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "_LocationEssentials.CLLocationCoordinate2D?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLLocationCoordinate2D",
+                    "printedName": "_LocationEssentials.CLLocationCoordinate2D",
+                    "usr": "c:@S@CLLocationCoordinate2D"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[_LocationEssentials.CLLocationCoordinate2D]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[_LocationEssentials.CLLocationCoordinate2D]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLLocationCoordinate2D",
+                        "printedName": "_LocationEssentials.CLLocationCoordinate2D",
+                        "usr": "c:@S@CLLocationCoordinate2D"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17PenguinINRenderer10PIRendererC20getClosestCoordinate4from2toSo22CLLocationCoordinate2DVSgAI_SayAHGSgtF",
+            "mangledName": "$s17PenguinINRenderer10PIRendererC20getClosestCoordinate4from2toSo22CLLocationCoordinate2DVSgAI_SayAHGSgtF",
+            "moduleName": "PenguinINRenderer",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -5606,9 +5766,277 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "accuracyRadius",
+            "printedName": "accuracyRadius",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MapboxMaps.Value<Swift.Double>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Value",
+                    "printedName": "MapboxMaps.Value<Swift.Double>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:10MapboxMaps5ValueO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PenguinINRenderer35LocationIndicatorLayerConfigurationC14accuracyRadius10MapboxMaps5ValueOySdGSgvp",
+            "mangledName": "$s17PenguinINRenderer35LocationIndicatorLayerConfigurationC14accuracyRadius10MapboxMaps5ValueOySdGSgvp",
+            "moduleName": "PenguinINRenderer",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MapboxMaps.Value<Swift.Double>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Value",
+                        "printedName": "MapboxMaps.Value<Swift.Double>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:10MapboxMaps5ValueO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PenguinINRenderer35LocationIndicatorLayerConfigurationC14accuracyRadius10MapboxMaps5ValueOySdGSgvg",
+                "mangledName": "$s17PenguinINRenderer35LocationIndicatorLayerConfigurationC14accuracyRadius10MapboxMaps5ValueOySdGSgvg",
+                "moduleName": "PenguinINRenderer",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MapboxMaps.Value<Swift.Double>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Value",
+                        "printedName": "MapboxMaps.Value<Swift.Double>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:10MapboxMaps5ValueO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PenguinINRenderer35LocationIndicatorLayerConfigurationC14accuracyRadius10MapboxMaps5ValueOySdGSgvs",
+                "mangledName": "$s17PenguinINRenderer35LocationIndicatorLayerConfigurationC14accuracyRadius10MapboxMaps5ValueOySdGSgvs",
+                "moduleName": "PenguinINRenderer",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PenguinINRenderer35LocationIndicatorLayerConfigurationC14accuracyRadius10MapboxMaps5ValueOySdGSgvM",
+                "mangledName": "$s17PenguinINRenderer35LocationIndicatorLayerConfigurationC14accuracyRadius10MapboxMaps5ValueOySdGSgvM",
+                "moduleName": "PenguinINRenderer",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accuracyRadiusColor",
+            "printedName": "accuracyRadiusColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MapboxMaps.Value<MapboxMaps.StyleColor>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Value",
+                    "printedName": "MapboxMaps.Value<MapboxMaps.StyleColor>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StyleColor",
+                        "printedName": "MapboxMaps.StyleColor",
+                        "usr": "s:10MapboxMaps10StyleColorV"
+                      }
+                    ],
+                    "usr": "s:10MapboxMaps5ValueO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PenguinINRenderer35LocationIndicatorLayerConfigurationC19accuracyRadiusColor10MapboxMaps5ValueOyAE05StyleI0VGSgvp",
+            "mangledName": "$s17PenguinINRenderer35LocationIndicatorLayerConfigurationC19accuracyRadiusColor10MapboxMaps5ValueOyAE05StyleI0VGSgvp",
+            "moduleName": "PenguinINRenderer",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MapboxMaps.Value<MapboxMaps.StyleColor>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Value",
+                        "printedName": "MapboxMaps.Value<MapboxMaps.StyleColor>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "StyleColor",
+                            "printedName": "MapboxMaps.StyleColor",
+                            "usr": "s:10MapboxMaps10StyleColorV"
+                          }
+                        ],
+                        "usr": "s:10MapboxMaps5ValueO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PenguinINRenderer35LocationIndicatorLayerConfigurationC19accuracyRadiusColor10MapboxMaps5ValueOyAE05StyleI0VGSgvg",
+                "mangledName": "$s17PenguinINRenderer35LocationIndicatorLayerConfigurationC19accuracyRadiusColor10MapboxMaps5ValueOyAE05StyleI0VGSgvg",
+                "moduleName": "PenguinINRenderer",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MapboxMaps.Value<MapboxMaps.StyleColor>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Value",
+                        "printedName": "MapboxMaps.Value<MapboxMaps.StyleColor>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "StyleColor",
+                            "printedName": "MapboxMaps.StyleColor",
+                            "usr": "s:10MapboxMaps10StyleColorV"
+                          }
+                        ],
+                        "usr": "s:10MapboxMaps5ValueO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PenguinINRenderer35LocationIndicatorLayerConfigurationC19accuracyRadiusColor10MapboxMaps5ValueOyAE05StyleI0VGSgvs",
+                "mangledName": "$s17PenguinINRenderer35LocationIndicatorLayerConfigurationC19accuracyRadiusColor10MapboxMaps5ValueOyAE05StyleI0VGSgvs",
+                "moduleName": "PenguinINRenderer",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PenguinINRenderer35LocationIndicatorLayerConfigurationC19accuracyRadiusColor10MapboxMaps5ValueOyAE05StyleI0VGSgvM",
+                "mangledName": "$s17PenguinINRenderer35LocationIndicatorLayerConfigurationC19accuracyRadiusColor10MapboxMaps5ValueOyAE05StyleI0VGSgvM",
+                "moduleName": "PenguinINRenderer",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(layerId:sourceId:minZoom:maxZoom:coordinate:topImage:topImageId:symbolZElevate:textFont:textSize:textOffset:textAnchor:iconAnchor:textAllowOverlap:iconAllowOverlap:textIgnorePlacement:iconIgnorePlacement:textHaloColor:textHaloWidth:lineColor:lineDasharray:lineWidth:size:circleColor:bearing:showsBearing:bearingImage:bearingImageId:visible:guidelineLayerId:)",
+            "printedName": "init(layerId:sourceId:minZoom:maxZoom:coordinate:topImage:topImageId:symbolZElevate:textFont:textSize:textOffset:textAnchor:iconAnchor:textAllowOverlap:iconAllowOverlap:textIgnorePlacement:iconIgnorePlacement:textHaloColor:textHaloWidth:lineColor:lineDasharray:lineWidth:size:circleColor:bearing:showsBearing:bearingImage:bearingImageId:accuracyRadius:accuracyRadiusColor:visible:guidelineLayerId:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5661,12 +6089,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "CoreLocation.CLLocationCoordinate2D?",
+                "printedName": "_LocationEssentials.CLLocationCoordinate2D?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "CLLocationCoordinate2D",
-                    "printedName": "CoreLocation.CLLocationCoordinate2D",
+                    "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                     "usr": "c:@S@CLLocationCoordinate2D"
                   }
                 ],
@@ -6079,6 +6507,36 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "Swift.Bool?",
                 "children": [
                   {
@@ -6099,8 +6557,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:17PenguinINRenderer35LocationIndicatorLayerConfigurationC7layerId06sourceH07minZoom03maxK010coordinate8topImage0noH014symbolZElevate8textFont0R4Size0R6Offset0R6Anchor04iconV00R12AllowOverlap0wxY00R15IgnorePlacement0wZ9Placement0R9HaloColor0R9HaloWidth9lineColor13lineDasharray9lineWidth4size11circleColor7bearing12showsBearing07bearingO007bearingoH07visible09guidelineeH0ACSS_SSSdSgA6_So22CLLocationCoordinate2DVSgSo7UIImageCSgSSSgSbSgSaySSGSgA6_SaySdGSgAA04TextV0OSgAA04IconV0OSgA14_A14_A14_A14_So7UIColorCSgA6_A27_A18_SaySd4zoom_Sd5valuetGSgA31_A27_A6_SbA12_A13_A14_SStcfc",
-            "mangledName": "$s17PenguinINRenderer35LocationIndicatorLayerConfigurationC7layerId06sourceH07minZoom03maxK010coordinate8topImage0noH014symbolZElevate8textFont0R4Size0R6Offset0R6Anchor04iconV00R12AllowOverlap0wxY00R15IgnorePlacement0wZ9Placement0R9HaloColor0R9HaloWidth9lineColor13lineDasharray9lineWidth4size11circleColor7bearing12showsBearing07bearingO007bearingoH07visible09guidelineeH0ACSS_SSSdSgA6_So22CLLocationCoordinate2DVSgSo7UIImageCSgSSSgSbSgSaySSGSgA6_SaySdGSgAA04TextV0OSgAA04IconV0OSgA14_A14_A14_A14_So7UIColorCSgA6_A27_A18_SaySd4zoom_Sd5valuetGSgA31_A27_A6_SbA12_A13_A14_SStcfc",
+            "usr": "s:17PenguinINRenderer35LocationIndicatorLayerConfigurationC7layerId06sourceH07minZoom03maxK010coordinate8topImage0noH014symbolZElevate8textFont0R4Size0R6Offset0R6Anchor04iconV00R12AllowOverlap0wxY00R15IgnorePlacement0wZ9Placement0R9HaloColor0R9HaloWidth9lineColor13lineDasharray9lineWidth4size11circleColor7bearing12showsBearing07bearingO007bearingoH014accuracyRadius19accuracyRadiusColor7visible09guidelineeH0ACSS_SSSdSgA8_So22CLLocationCoordinate2DVSgSo7UIImageCSgSSSgSbSgSaySSGSgA8_SaySdGSgAA04TextV0OSgAA04IconV0OSgA16_A16_A16_A16_So7UIColorCSgA8_A29_A20_SaySd4zoom_Sd5valuetGSgA33_A29_A8_SbA14_A15_A8_A29_A16_SStcfc",
+            "mangledName": "$s17PenguinINRenderer35LocationIndicatorLayerConfigurationC7layerId06sourceH07minZoom03maxK010coordinate8topImage0noH014symbolZElevate8textFont0R4Size0R6Offset0R6Anchor04iconV00R12AllowOverlap0wxY00R15IgnorePlacement0wZ9Placement0R9HaloColor0R9HaloWidth9lineColor13lineDasharray9lineWidth4size11circleColor7bearing12showsBearing07bearingO007bearingoH014accuracyRadius19accuracyRadiusColor7visible09guidelineeH0ACSS_SSSdSgA8_So22CLLocationCoordinate2DVSgSo7UIImageCSgSSSgSbSgSaySSGSgA8_SaySdGSgAA04TextV0OSgAA04IconV0OSgA16_A16_A16_A16_So7UIColorCSgA8_A29_A20_SaySd4zoom_Sd5valuetGSgA33_A29_A8_SbA14_A15_A8_A29_A16_SStcfc",
             "moduleName": "PenguinINRenderer",
             "declAttributes": [
               "AccessControl"
@@ -6110,7 +6568,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(layerId:sourceId:minZoom:maxZoom:symbolZElevate:textFont:textSize:textOffset:textAnchor:iconAnchor:textAllowOverlap:iconAllowOverlap:textIgnorePlacement:iconIgnorePlacement:textHaloColor:textHaloWidth:lineColor:lineDasharray:lineWidth:size:circleColor:visible:guidelineLayerId:)",
+            "printedName": "init(layerId:sourceId:minZoom:maxZoom:symbolZElevate:textFont:textSize:textOffset:textAnchor:iconAnchor:textAllowOverlap:iconAllowOverlap:textIgnorePlacement:iconIgnorePlacement:textHaloColor:textHaloWidth:lineColor:lineDasharray:lineWidth:size:circleColor:alignsIconToMap:alignsTextToMap:visible:guidelineLayerId:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6498,14 +6956,44 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:17PenguinINRenderer35LocationIndicatorLayerConfigurationC7layerId06sourceH07minZoom03maxK014symbolZElevate8textFont0O4Size0O6Offset0O6Anchor04iconS00O12AllowOverlap0tuV00O15IgnorePlacement0twX00O9HaloColor0oY5Width04lineZ013lineDasharray9lineWidth4size06circleZ07visible09guidelineeH0ACSS_SSSdSgA_SbSgSaySSGSgA_SaySdGSgAA04TextS0OSgAA04IconS0OSgA0_A0_A0_A0_So7UIColorCSgA_A13_A4_SaySd4zoom_Sd5valuetGSgA17_A13_A0_SStcfc",
-            "mangledName": "$s17PenguinINRenderer35LocationIndicatorLayerConfigurationC7layerId06sourceH07minZoom03maxK014symbolZElevate8textFont0O4Size0O6Offset0O6Anchor04iconS00O12AllowOverlap0tuV00O15IgnorePlacement0twX00O9HaloColor0oY5Width04lineZ013lineDasharray9lineWidth4size06circleZ07visible09guidelineeH0ACSS_SSSdSgA_SbSgSaySSGSgA_SaySdGSgAA04TextS0OSgAA04IconS0OSgA0_A0_A0_A0_So7UIColorCSgA_A13_A4_SaySd4zoom_Sd5valuetGSgA17_A13_A0_SStcfc",
+            "usr": "s:17PenguinINRenderer35LocationIndicatorLayerConfigurationC7layerId06sourceH07minZoom03maxK014symbolZElevate8textFont0O4Size0O6Offset0O6Anchor04iconS00O12AllowOverlap0tuV00O15IgnorePlacement0twX00O9HaloColor0oY5Width04lineZ013lineDasharray9lineWidth4size06circleZ015alignsIconToMap15alignsTextToMap7visible09guidelineeH0ACSS_SSSdSgA1_SbSgSaySSGSgA1_SaySdGSgAA04TextS0OSgAA04IconS0OSgA2_A2_A2_A2_So7UIColorCSgA1_A15_A6_SaySd4zoom_Sd5valuetGSgA19_A15_A2_A2_A2_SStcfc",
+            "mangledName": "$s17PenguinINRenderer35LocationIndicatorLayerConfigurationC7layerId06sourceH07minZoom03maxK014symbolZElevate8textFont0O4Size0O6Offset0O6Anchor04iconS00O12AllowOverlap0tuV00O15IgnorePlacement0twX00O9HaloColor0oY5Width04lineZ013lineDasharray9lineWidth4size06circleZ015alignsIconToMap15alignsTextToMap7visible09guidelineeH0ACSS_SSSdSgA1_SbSgSaySSGSgA1_SaySdGSgAA04TextS0OSgAA04IconS0OSgA2_A2_A2_A2_So7UIColorCSgA1_A15_A6_SaySd4zoom_Sd5valuetGSgA19_A15_A2_A2_A2_SStcfc",
             "moduleName": "PenguinINRenderer",
             "overriding": true,
             "implicit": true,
@@ -7320,12 +7808,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "CoreLocation.CLLocationCoordinate2D?",
+                "printedName": "_LocationEssentials.CLLocationCoordinate2D?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "CLLocationCoordinate2D",
-                    "printedName": "CoreLocation.CLLocationCoordinate2D",
+                    "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                     "usr": "c:@S@CLLocationCoordinate2D"
                   }
                 ],
@@ -7337,10 +7825,10 @@
             "mangledName": "$s17PenguinINRenderer19CameraConfigurationV16centerCoordinateSo22CLLocationCoordinate2DVSgvp",
             "moduleName": "PenguinINRenderer",
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl"
             ],
-            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -7351,12 +7839,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "CoreLocation.CLLocationCoordinate2D?",
+                    "printedName": "_LocationEssentials.CLLocationCoordinate2D?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "CLLocationCoordinate2D",
-                        "printedName": "CoreLocation.CLLocationCoordinate2D",
+                        "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                         "usr": "c:@S@CLLocationCoordinate2D"
                       }
                     ],
@@ -7369,6 +7857,190 @@
                 "moduleName": "PenguinINRenderer",
                 "implicit": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "_LocationEssentials.CLLocationCoordinate2D?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLLocationCoordinate2D",
+                        "printedName": "_LocationEssentials.CLLocationCoordinate2D",
+                        "usr": "c:@S@CLLocationCoordinate2D"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PenguinINRenderer19CameraConfigurationV16centerCoordinateSo22CLLocationCoordinate2DVSgvs",
+                "mangledName": "$s17PenguinINRenderer19CameraConfigurationV16centerCoordinateSo22CLLocationCoordinate2DVSgvs",
+                "moduleName": "PenguinINRenderer",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PenguinINRenderer19CameraConfigurationV16centerCoordinateSo22CLLocationCoordinate2DVSgvM",
+                "mangledName": "$s17PenguinINRenderer19CameraConfigurationV16centerCoordinateSo22CLLocationCoordinate2DVSgvM",
+                "moduleName": "PenguinINRenderer",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "coordinates",
+            "printedName": "coordinates",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[_LocationEssentials.CLLocationCoordinate2D]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[_LocationEssentials.CLLocationCoordinate2D]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLLocationCoordinate2D",
+                        "printedName": "_LocationEssentials.CLLocationCoordinate2D",
+                        "usr": "c:@S@CLLocationCoordinate2D"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PenguinINRenderer19CameraConfigurationV11coordinatesSaySo22CLLocationCoordinate2DVGSgvp",
+            "mangledName": "$s17PenguinINRenderer19CameraConfigurationV11coordinatesSaySo22CLLocationCoordinate2DVGSgvp",
+            "moduleName": "PenguinINRenderer",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[_LocationEssentials.CLLocationCoordinate2D]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[_LocationEssentials.CLLocationCoordinate2D]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CLLocationCoordinate2D",
+                            "printedName": "_LocationEssentials.CLLocationCoordinate2D",
+                            "usr": "c:@S@CLLocationCoordinate2D"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PenguinINRenderer19CameraConfigurationV11coordinatesSaySo22CLLocationCoordinate2DVGSgvg",
+                "mangledName": "$s17PenguinINRenderer19CameraConfigurationV11coordinatesSaySo22CLLocationCoordinate2DVGSgvg",
+                "moduleName": "PenguinINRenderer",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[_LocationEssentials.CLLocationCoordinate2D]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[_LocationEssentials.CLLocationCoordinate2D]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CLLocationCoordinate2D",
+                            "printedName": "_LocationEssentials.CLLocationCoordinate2D",
+                            "usr": "c:@S@CLLocationCoordinate2D"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PenguinINRenderer19CameraConfigurationV11coordinatesSaySo22CLLocationCoordinate2DVGSgvs",
+                "mangledName": "$s17PenguinINRenderer19CameraConfigurationV11coordinatesSaySo22CLLocationCoordinate2DVGSgvs",
+                "moduleName": "PenguinINRenderer",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PenguinINRenderer19CameraConfigurationV11coordinatesSaySo22CLLocationCoordinate2DVGSgvM",
+                "mangledName": "$s17PenguinINRenderer19CameraConfigurationV11coordinatesSaySo22CLLocationCoordinate2DVGSgvM",
+                "moduleName": "PenguinINRenderer",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -7397,10 +8069,10 @@
             "mangledName": "$s17PenguinINRenderer19CameraConfigurationV7bearingSdSgvp",
             "moduleName": "PenguinINRenderer",
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl"
             ],
-            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -7429,6 +8101,56 @@
                 "moduleName": "PenguinINRenderer",
                 "implicit": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PenguinINRenderer19CameraConfigurationV7bearingSdSgvs",
+                "mangledName": "$s17PenguinINRenderer19CameraConfigurationV7bearingSdSgvs",
+                "moduleName": "PenguinINRenderer",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PenguinINRenderer19CameraConfigurationV7bearingSdSgvM",
+                "mangledName": "$s17PenguinINRenderer19CameraConfigurationV7bearingSdSgvM",
+                "moduleName": "PenguinINRenderer",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -7457,10 +8179,10 @@
             "mangledName": "$s17PenguinINRenderer19CameraConfigurationV9zoomLevel12CoreGraphics7CGFloatVSgvp",
             "moduleName": "PenguinINRenderer",
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl"
             ],
-            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -7489,6 +8211,56 @@
                 "moduleName": "PenguinINRenderer",
                 "implicit": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreGraphics.CGFloat?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PenguinINRenderer19CameraConfigurationV9zoomLevel14CoreFoundation7CGFloatVSgvs",
+                "mangledName": "$s17PenguinINRenderer19CameraConfigurationV9zoomLevel12CoreGraphics7CGFloatVSgvs",
+                "moduleName": "PenguinINRenderer",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PenguinINRenderer19CameraConfigurationV9zoomLevel14CoreFoundation7CGFloatVSgvM",
+                "mangledName": "$s17PenguinINRenderer19CameraConfigurationV9zoomLevel12CoreGraphics7CGFloatVSgvM",
+                "moduleName": "PenguinINRenderer",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -7626,12 +8398,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "CoreLocation.CLLocationCoordinate2D?",
+                "printedName": "_LocationEssentials.CLLocationCoordinate2D?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "CLLocationCoordinate2D",
-                    "printedName": "CoreLocation.CLLocationCoordinate2D",
+                    "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                     "usr": "c:@S@CLLocationCoordinate2D"
                   }
                 ],
@@ -7641,17 +8413,17 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[CoreLocation.CLLocationCoordinate2D]?",
+                "printedName": "[_LocationEssentials.CLLocationCoordinate2D]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[CoreLocation.CLLocationCoordinate2D]",
+                    "printedName": "[_LocationEssentials.CLLocationCoordinate2D]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "CLLocationCoordinate2D",
-                        "printedName": "CoreLocation.CLLocationCoordinate2D",
+                        "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                         "usr": "c:@S@CLLocationCoordinate2D"
                       }
                     ],
@@ -7820,12 +8592,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "CoreLocation.CLLocationCoordinate2D?",
+                "printedName": "_LocationEssentials.CLLocationCoordinate2D?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "CLLocationCoordinate2D",
-                    "printedName": "CoreLocation.CLLocationCoordinate2D",
+                    "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                     "usr": "c:@S@CLLocationCoordinate2D"
                   }
                 ],
@@ -7846,12 +8618,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "CoreLocation.CLLocationCoordinate2D?",
+                    "printedName": "_LocationEssentials.CLLocationCoordinate2D?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "CLLocationCoordinate2D",
-                        "printedName": "CoreLocation.CLLocationCoordinate2D",
+                        "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                         "usr": "c:@S@CLLocationCoordinate2D"
                       }
                     ],
@@ -7911,30 +8683,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Function",
-            "name": "mapDidTap",
-            "printedName": "mapDidTap()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17PenguinINRenderer22PIMapViewEventDelegateP9mapDidTapyyF",
-            "mangledName": "$s17PenguinINRenderer22PIMapViewEventDelegateP9mapDidTapyyF",
-            "moduleName": "PenguinINRenderer",
-            "genericSig": "<τ_0_0 where τ_0_0 : PenguinINRenderer.PIMapViewEventDelegate>",
-            "sugared_genericSig": "<Self where Self : PenguinINRenderer.PIMapViewEventDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -8010,8 +8758,8 @@
           },
           {
             "kind": "Function",
-            "name": "mapDidDoubleTapped",
-            "printedName": "mapDidDoubleTapped()",
+            "name": "mapDidDoubleTap",
+            "printedName": "mapDidDoubleTap()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8020,8 +8768,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17PenguinINRenderer22PIMapViewEventDelegateP18mapDidDoubleTappedyyF",
-            "mangledName": "$s17PenguinINRenderer22PIMapViewEventDelegateP18mapDidDoubleTappedyyF",
+            "usr": "s:17PenguinINRenderer22PIMapViewEventDelegateP15mapDidDoubleTapyyF",
+            "mangledName": "$s17PenguinINRenderer22PIMapViewEventDelegateP15mapDidDoubleTapyyF",
             "moduleName": "PenguinINRenderer",
             "genericSig": "<τ_0_0 where τ_0_0 : PenguinINRenderer.PIMapViewEventDelegate>",
             "sugared_genericSig": "<Self where Self : PenguinINRenderer.PIMapViewEventDelegate>",
@@ -8034,8 +8782,8 @@
           },
           {
             "kind": "Function",
-            "name": "onSelectSymbol",
-            "printedName": "onSelectSymbol(identifier:)",
+            "name": "featureDidTap",
+            "printedName": "featureDidTap(identifier:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8050,8 +8798,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17PenguinINRenderer22PIMapViewEventDelegateP14onSelectSymbol10identifierySS_tF",
-            "mangledName": "$s17PenguinINRenderer22PIMapViewEventDelegateP14onSelectSymbol10identifierySS_tF",
+            "usr": "s:17PenguinINRenderer22PIMapViewEventDelegateP13featureDidTap10identifierySS_tF",
+            "mangledName": "$s17PenguinINRenderer22PIMapViewEventDelegateP13featureDidTap10identifierySS_tF",
             "moduleName": "PenguinINRenderer",
             "genericSig": "<τ_0_0 where τ_0_0 : PenguinINRenderer.PIMapViewEventDelegate>",
             "sugared_genericSig": "<Self where Self : PenguinINRenderer.PIMapViewEventDelegate>",
@@ -8064,8 +8812,8 @@
           },
           {
             "kind": "Function",
-            "name": "onSelectUserLocation",
-            "printedName": "onSelectUserLocation()",
+            "name": "userLocationIndicatorDidTap",
+            "printedName": "userLocationIndicatorDidTap()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8074,8 +8822,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17PenguinINRenderer22PIMapViewEventDelegateP20onSelectUserLocationyyF",
-            "mangledName": "$s17PenguinINRenderer22PIMapViewEventDelegateP20onSelectUserLocationyyF",
+            "usr": "s:17PenguinINRenderer22PIMapViewEventDelegateP27userLocationIndicatorDidTapyyF",
+            "mangledName": "$s17PenguinINRenderer22PIMapViewEventDelegateP27userLocationIndicatorDidTapyyF",
             "moduleName": "PenguinINRenderer",
             "genericSig": "<τ_0_0 where τ_0_0 : PenguinINRenderer.PIMapViewEventDelegate>",
             "sugared_genericSig": "<Self where Self : PenguinINRenderer.PIMapViewEventDelegate>",
@@ -8112,8 +8860,8 @@
           },
           {
             "kind": "Function",
-            "name": "mapAlignedNorth",
-            "printedName": "mapAlignedNorth()",
+            "name": "compassDidTap",
+            "printedName": "compassDidTap()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8122,8 +8870,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17PenguinINRenderer22PIMapViewEventDelegateP15mapAlignedNorthyyF",
-            "mangledName": "$s17PenguinINRenderer22PIMapViewEventDelegateP15mapAlignedNorthyyF",
+            "usr": "s:17PenguinINRenderer22PIMapViewEventDelegateP13compassDidTapyyF",
+            "mangledName": "$s17PenguinINRenderer22PIMapViewEventDelegateP13compassDidTapyyF",
             "moduleName": "PenguinINRenderer",
             "genericSig": "<τ_0_0 where τ_0_0 : PenguinINRenderer.PIMapViewEventDelegate>",
             "sugared_genericSig": "<Self where Self : PenguinINRenderer.PIMapViewEventDelegate>",
@@ -8136,8 +8884,8 @@
           },
           {
             "kind": "Function",
-            "name": "mapPitchChanged",
-            "printedName": "mapPitchChanged()",
+            "name": "mapDidTilt",
+            "printedName": "mapDidTilt()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8146,8 +8894,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17PenguinINRenderer22PIMapViewEventDelegateP15mapPitchChangedyyF",
-            "mangledName": "$s17PenguinINRenderer22PIMapViewEventDelegateP15mapPitchChangedyyF",
+            "usr": "s:17PenguinINRenderer22PIMapViewEventDelegateP10mapDidTiltyyF",
+            "mangledName": "$s17PenguinINRenderer22PIMapViewEventDelegateP10mapDidTiltyyF",
             "moduleName": "PenguinINRenderer",
             "genericSig": "<τ_0_0 where τ_0_0 : PenguinINRenderer.PIMapViewEventDelegate>",
             "sugared_genericSig": "<Self where Self : PenguinINRenderer.PIMapViewEventDelegate>",
@@ -8160,8 +8908,8 @@
           },
           {
             "kind": "Function",
-            "name": "puckLocationDidUpdate",
-            "printedName": "puckLocationDidUpdate(coordinate:)",
+            "name": "puckCoordinateDidUpdate",
+            "printedName": "puckCoordinateDidUpdate(coordinate:animated:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8171,13 +8919,19 @@
               {
                 "kind": "TypeNominal",
                 "name": "CLLocationCoordinate2D",
-                "printedName": "CoreLocation.CLLocationCoordinate2D",
+                "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                 "usr": "c:@S@CLLocationCoordinate2D"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:17PenguinINRenderer22PIMapViewEventDelegateP21puckLocationDidUpdate10coordinateySo22CLLocationCoordinate2DV_tF",
-            "mangledName": "$s17PenguinINRenderer22PIMapViewEventDelegateP21puckLocationDidUpdate10coordinateySo22CLLocationCoordinate2DV_tF",
+            "usr": "s:17PenguinINRenderer22PIMapViewEventDelegateP23puckCoordinateDidUpdate10coordinate8animatedySo22CLLocationCoordinate2DV_SbtF",
+            "mangledName": "$s17PenguinINRenderer22PIMapViewEventDelegateP23puckCoordinateDidUpdate10coordinate8animatedySo22CLLocationCoordinate2DV_SbtF",
             "moduleName": "PenguinINRenderer",
             "genericSig": "<τ_0_0 where τ_0_0 : PenguinINRenderer.PIMapViewEventDelegate>",
             "sugared_genericSig": "<Self where Self : PenguinINRenderer.PIMapViewEventDelegate>",
@@ -8185,6 +8939,41 @@
             "declAttributes": [
               "RawDocComment"
             ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "puckBearingDidUpdate",
+            "printedName": "puckBearingDidUpdate(bearing:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17PenguinINRenderer22PIMapViewEventDelegateP20puckBearingDidUpdate7bearingySdSg_tF",
+            "mangledName": "$s17PenguinINRenderer22PIMapViewEventDelegateP20puckBearingDidUpdate7bearingySdSg_tF",
+            "moduleName": "PenguinINRenderer",
+            "genericSig": "<τ_0_0 where τ_0_0 : PenguinINRenderer.PIMapViewEventDelegate>",
+            "sugared_genericSig": "<Self where Self : PenguinINRenderer.PIMapViewEventDelegate>",
+            "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
@@ -10899,6 +11688,274 @@
           },
           {
             "kind": "Var",
+            "name": "iconPitchAlignment",
+            "printedName": "iconPitchAlignment",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MapboxMaps.Value<MapboxMaps.IconPitchAlignment>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Value",
+                    "printedName": "MapboxMaps.Value<MapboxMaps.IconPitchAlignment>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IconPitchAlignment",
+                        "printedName": "MapboxMaps.IconPitchAlignment",
+                        "usr": "s:10MapboxMaps18IconPitchAlignmentV"
+                      }
+                    ],
+                    "usr": "s:10MapboxMaps5ValueO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PenguinINRenderer18LayerConfigurationC18iconPitchAlignment10MapboxMaps5ValueOyAE04IconfG0VGSgvp",
+            "mangledName": "$s17PenguinINRenderer18LayerConfigurationC18iconPitchAlignment10MapboxMaps5ValueOyAE04IconfG0VGSgvp",
+            "moduleName": "PenguinINRenderer",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MapboxMaps.Value<MapboxMaps.IconPitchAlignment>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Value",
+                        "printedName": "MapboxMaps.Value<MapboxMaps.IconPitchAlignment>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "IconPitchAlignment",
+                            "printedName": "MapboxMaps.IconPitchAlignment",
+                            "usr": "s:10MapboxMaps18IconPitchAlignmentV"
+                          }
+                        ],
+                        "usr": "s:10MapboxMaps5ValueO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PenguinINRenderer18LayerConfigurationC18iconPitchAlignment10MapboxMaps5ValueOyAE04IconfG0VGSgvg",
+                "mangledName": "$s17PenguinINRenderer18LayerConfigurationC18iconPitchAlignment10MapboxMaps5ValueOyAE04IconfG0VGSgvg",
+                "moduleName": "PenguinINRenderer",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MapboxMaps.Value<MapboxMaps.IconPitchAlignment>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Value",
+                        "printedName": "MapboxMaps.Value<MapboxMaps.IconPitchAlignment>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "IconPitchAlignment",
+                            "printedName": "MapboxMaps.IconPitchAlignment",
+                            "usr": "s:10MapboxMaps18IconPitchAlignmentV"
+                          }
+                        ],
+                        "usr": "s:10MapboxMaps5ValueO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PenguinINRenderer18LayerConfigurationC18iconPitchAlignment10MapboxMaps5ValueOyAE04IconfG0VGSgvs",
+                "mangledName": "$s17PenguinINRenderer18LayerConfigurationC18iconPitchAlignment10MapboxMaps5ValueOyAE04IconfG0VGSgvs",
+                "moduleName": "PenguinINRenderer",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PenguinINRenderer18LayerConfigurationC18iconPitchAlignment10MapboxMaps5ValueOyAE04IconfG0VGSgvM",
+                "mangledName": "$s17PenguinINRenderer18LayerConfigurationC18iconPitchAlignment10MapboxMaps5ValueOyAE04IconfG0VGSgvM",
+                "moduleName": "PenguinINRenderer",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "textPitchAlignment",
+            "printedName": "textPitchAlignment",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MapboxMaps.Value<MapboxMaps.TextPitchAlignment>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Value",
+                    "printedName": "MapboxMaps.Value<MapboxMaps.TextPitchAlignment>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TextPitchAlignment",
+                        "printedName": "MapboxMaps.TextPitchAlignment",
+                        "usr": "s:10MapboxMaps18TextPitchAlignmentV"
+                      }
+                    ],
+                    "usr": "s:10MapboxMaps5ValueO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PenguinINRenderer18LayerConfigurationC18textPitchAlignment10MapboxMaps5ValueOyAE04TextfG0VGSgvp",
+            "mangledName": "$s17PenguinINRenderer18LayerConfigurationC18textPitchAlignment10MapboxMaps5ValueOyAE04TextfG0VGSgvp",
+            "moduleName": "PenguinINRenderer",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MapboxMaps.Value<MapboxMaps.TextPitchAlignment>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Value",
+                        "printedName": "MapboxMaps.Value<MapboxMaps.TextPitchAlignment>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TextPitchAlignment",
+                            "printedName": "MapboxMaps.TextPitchAlignment",
+                            "usr": "s:10MapboxMaps18TextPitchAlignmentV"
+                          }
+                        ],
+                        "usr": "s:10MapboxMaps5ValueO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PenguinINRenderer18LayerConfigurationC18textPitchAlignment10MapboxMaps5ValueOyAE04TextfG0VGSgvg",
+                "mangledName": "$s17PenguinINRenderer18LayerConfigurationC18textPitchAlignment10MapboxMaps5ValueOyAE04TextfG0VGSgvg",
+                "moduleName": "PenguinINRenderer",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MapboxMaps.Value<MapboxMaps.TextPitchAlignment>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Value",
+                        "printedName": "MapboxMaps.Value<MapboxMaps.TextPitchAlignment>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TextPitchAlignment",
+                            "printedName": "MapboxMaps.TextPitchAlignment",
+                            "usr": "s:10MapboxMaps18TextPitchAlignmentV"
+                          }
+                        ],
+                        "usr": "s:10MapboxMaps5ValueO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PenguinINRenderer18LayerConfigurationC18textPitchAlignment10MapboxMaps5ValueOyAE04TextfG0VGSgvs",
+                "mangledName": "$s17PenguinINRenderer18LayerConfigurationC18textPitchAlignment10MapboxMaps5ValueOyAE04TextfG0VGSgvs",
+                "moduleName": "PenguinINRenderer",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PenguinINRenderer18LayerConfigurationC18textPitchAlignment10MapboxMaps5ValueOyAE04TextfG0VGSgvM",
+                "mangledName": "$s17PenguinINRenderer18LayerConfigurationC18textPitchAlignment10MapboxMaps5ValueOyAE04TextfG0VGSgvM",
+                "moduleName": "PenguinINRenderer",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "visibility",
             "printedName": "visibility",
             "children": [
@@ -11058,7 +12115,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(layerId:sourceId:minZoom:maxZoom:symbolZElevate:textFont:textSize:textOffset:textAnchor:iconAnchor:textAllowOverlap:iconAllowOverlap:textIgnorePlacement:iconIgnorePlacement:textHaloColor:textHaloWidth:lineColor:lineDasharray:lineWidth:size:circleColor:visible:guidelineLayerId:)",
+            "printedName": "init(layerId:sourceId:minZoom:maxZoom:symbolZElevate:textFont:textSize:textOffset:textAnchor:iconAnchor:textAllowOverlap:iconAllowOverlap:textIgnorePlacement:iconIgnorePlacement:textHaloColor:textHaloWidth:lineColor:lineDasharray:lineWidth:size:circleColor:alignsIconToMap:alignsTextToMap:visible:guidelineLayerId:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -11446,14 +12503,44 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:17PenguinINRenderer18LayerConfigurationC7layerId06sourceF07minZoom03maxI014symbolZElevate8textFont0M4Size0M6Offset0M6Anchor04iconQ00M12AllowOverlap0rsT00M15IgnorePlacement0ruV00M9HaloColor0mW5Width04lineX00Z9Dasharray0zY04size06circleX07visible09guidelinecF0ACSS_SSSdSgA_SbSgSaySSGSgA_SaySdGSgAA04TextQ0OSgAA04IconQ0OSgA0_A0_A0_A0_So7UIColorCSgA_A13_A4_SaySd4zoom_Sd5valuetGSgA17_A13_A0_SStcfc",
-            "mangledName": "$s17PenguinINRenderer18LayerConfigurationC7layerId06sourceF07minZoom03maxI014symbolZElevate8textFont0M4Size0M6Offset0M6Anchor04iconQ00M12AllowOverlap0rsT00M15IgnorePlacement0ruV00M9HaloColor0mW5Width04lineX00Z9Dasharray0zY04size06circleX07visible09guidelinecF0ACSS_SSSdSgA_SbSgSaySSGSgA_SaySdGSgAA04TextQ0OSgAA04IconQ0OSgA0_A0_A0_A0_So7UIColorCSgA_A13_A4_SaySd4zoom_Sd5valuetGSgA17_A13_A0_SStcfc",
+            "usr": "s:17PenguinINRenderer18LayerConfigurationC7layerId06sourceF07minZoom03maxI014symbolZElevate8textFont0M4Size0M6Offset0M6Anchor04iconQ00M12AllowOverlap0rsT00M15IgnorePlacement0ruV00M9HaloColor0mW5Width04lineX00Z9Dasharray0zY04size06circleX015alignsIconToMap15alignsTextToMap7visible09guidelinecF0ACSS_SSSdSgA1_SbSgSaySSGSgA1_SaySdGSgAA04TextQ0OSgAA04IconQ0OSgA2_A2_A2_A2_So7UIColorCSgA1_A15_A6_SaySd4zoom_Sd5valuetGSgA19_A15_A2_A2_A2_SStcfc",
+            "mangledName": "$s17PenguinINRenderer18LayerConfigurationC7layerId06sourceF07minZoom03maxI014symbolZElevate8textFont0M4Size0M6Offset0M6Anchor04iconQ00M12AllowOverlap0rsT00M15IgnorePlacement0ruV00M9HaloColor0mW5Width04lineX00Z9Dasharray0zY04size06circleX015alignsIconToMap15alignsTextToMap7visible09guidelinecF0ACSS_SSSdSgA1_SbSgSaySSGSgA1_SaySdGSgAA04TextQ0OSgAA04IconQ0OSgA2_A2_A2_A2_So7UIColorCSgA1_A15_A6_SaySd4zoom_Sd5valuetGSgA19_A15_A2_A2_A2_SStcfc",
             "moduleName": "PenguinINRenderer",
             "declAttributes": [
               "AccessControl"
@@ -11497,13 +12584,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PenguinINRenderer"
-      },
-      {
-        "kind": "Import",
         "name": "MapboxMaps",
         "printedName": "MapboxMaps",
         "declKind": "Import",
@@ -11518,13 +12598,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "PenguinINRenderer"
       },
       {
         "kind": "Import",
@@ -12043,991 +13116,6 @@
         "printedName": "DeveloperToolsSupport",
         "declKind": "Import",
         "moduleName": "PenguinINRenderer"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "String",
-        "printedName": "String",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "encodeUrl",
-            "printedName": "encodeUrl()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:SS17PenguinINRendererE9encodeUrlSSSgyF",
-            "mangledName": "$sSS17PenguinINRendererE9encodeUrlSSSgyF",
-            "moduleName": "PenguinINRenderer",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "fileURL",
-            "printedName": "fileURL",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "URL",
-                "printedName": "Foundation.URL",
-                "usr": "s:10Foundation3URLV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:SS17PenguinINRendererE7fileURL10Foundation0D0Vvp",
-            "mangledName": "$sSS17PenguinINRendererE7fileURL10Foundation0D0Vvp",
-            "moduleName": "PenguinINRenderer",
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "URL",
-                    "printedName": "Foundation.URL",
-                    "usr": "s:10Foundation3URLV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:SS17PenguinINRendererE7fileURL10Foundation0D0Vvg",
-                "mangledName": "$sSS17PenguinINRendererE7fileURL10Foundation0D0Vvg",
-                "moduleName": "PenguinINRenderer",
-                "isFromExtension": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "containsIgnoringCase",
-            "printedName": "containsIgnoringCase(find:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:SS17PenguinINRendererE20containsIgnoringCase4findSbSS_tF",
-            "mangledName": "$sSS17PenguinINRendererE20containsIgnoringCase4findSbSS_tF",
-            "moduleName": "PenguinINRenderer",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:SS",
-        "mangledName": "$sSS",
-        "moduleName": "Swift",
-        "declAttributes": [
-          "EagerMove",
-          "Frozen"
-        ],
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CodingKeyRepresentable",
-            "printedName": "CodingKeyRepresentable",
-            "usr": "s:s22CodingKeyRepresentableP",
-            "mangledName": "$ss22CodingKeyRepresentableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_HasContiguousBytes",
-            "printedName": "_HasContiguousBytes",
-            "usr": "s:s19_HasContiguousBytesP",
-            "mangledName": "$ss19_HasContiguousBytesP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomReflectable",
-            "printedName": "CustomReflectable",
-            "usr": "s:s17CustomReflectableP",
-            "mangledName": "$ss17CustomReflectableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_CustomPlaygroundQuickLookable",
-            "printedName": "_CustomPlaygroundQuickLookable",
-            "usr": "s:s30_CustomPlaygroundQuickLookableP",
-            "mangledName": "$ss30_CustomPlaygroundQuickLookableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "TextOutputStream",
-            "printedName": "TextOutputStream",
-            "usr": "s:s16TextOutputStreamP",
-            "mangledName": "$ss16TextOutputStreamP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "TextOutputStreamable",
-            "printedName": "TextOutputStreamable",
-            "usr": "s:s20TextOutputStreamableP",
-            "mangledName": "$ss20TextOutputStreamableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_ExpressibleByBuiltinUnicodeScalarLiteral",
-            "printedName": "_ExpressibleByBuiltinUnicodeScalarLiteral",
-            "usr": "s:s41_ExpressibleByBuiltinUnicodeScalarLiteralP",
-            "mangledName": "$ss41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_ExpressibleByBuiltinExtendedGraphemeClusterLiteral",
-            "printedName": "_ExpressibleByBuiltinExtendedGraphemeClusterLiteral",
-            "usr": "s:s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP",
-            "mangledName": "$ss51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_ExpressibleByBuiltinStringLiteral",
-            "printedName": "_ExpressibleByBuiltinStringLiteral",
-            "usr": "s:s34_ExpressibleByBuiltinStringLiteralP",
-            "mangledName": "$ss34_ExpressibleByBuiltinStringLiteralP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ExpressibleByStringLiteral",
-            "printedName": "ExpressibleByStringLiteral",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "StringLiteralType",
-                "printedName": "StringLiteralType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s26ExpressibleByStringLiteralP",
-            "mangledName": "$ss26ExpressibleByStringLiteralP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ExpressibleByExtendedGraphemeClusterLiteral",
-            "printedName": "ExpressibleByExtendedGraphemeClusterLiteral",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ExtendedGraphemeClusterLiteralType",
-                "printedName": "ExtendedGraphemeClusterLiteralType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s43ExpressibleByExtendedGraphemeClusterLiteralP",
-            "mangledName": "$ss43ExpressibleByExtendedGraphemeClusterLiteralP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ExpressibleByUnicodeScalarLiteral",
-            "printedName": "ExpressibleByUnicodeScalarLiteral",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "UnicodeScalarLiteralType",
-                "printedName": "UnicodeScalarLiteralType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s33ExpressibleByUnicodeScalarLiteralP",
-            "mangledName": "$ss33ExpressibleByUnicodeScalarLiteralP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "BidirectionalCollection",
-            "printedName": "BidirectionalCollection",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Element",
-                "printedName": "Element",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Character",
-                    "printedName": "Swift.Character",
-                    "usr": "s:SJ"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Index",
-                "printedName": "Index",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Index",
-                    "printedName": "Swift.String.Index",
-                    "usr": "s:SS5IndexV"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "SubSequence",
-                "printedName": "SubSequence",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Substring",
-                    "printedName": "Swift.Substring",
-                    "usr": "s:Ss"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Indices",
-                "printedName": "Indices",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DefaultIndices",
-                    "printedName": "Swift.DefaultIndices<Swift.String>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:SI"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SK",
-            "mangledName": "$sSK"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Collection",
-            "printedName": "Collection",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Element",
-                "printedName": "Element",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Character",
-                    "printedName": "Swift.Character",
-                    "usr": "s:SJ"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Index",
-                "printedName": "Index",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Index",
-                    "printedName": "Swift.String.Index",
-                    "usr": "s:SS5IndexV"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Iterator",
-                "printedName": "Iterator",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Iterator",
-                    "printedName": "Swift.String.Iterator",
-                    "usr": "s:SS8IteratorV"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "SubSequence",
-                "printedName": "SubSequence",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Substring",
-                    "printedName": "Swift.Substring",
-                    "usr": "s:Ss"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Indices",
-                "printedName": "Indices",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DefaultIndices",
-                    "printedName": "Swift.DefaultIndices<Swift.String>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:SI"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:Sl",
-            "mangledName": "$sSl"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sequence",
-            "printedName": "Sequence",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Element",
-                "printedName": "Element",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Character",
-                    "printedName": "Swift.Character",
-                    "usr": "s:SJ"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Iterator",
-                "printedName": "Iterator",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Iterator",
-                    "printedName": "Swift.String.Iterator",
-                    "usr": "s:SS8IteratorV"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:ST",
-            "mangledName": "$sST"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Comparable",
-            "printedName": "Comparable",
-            "usr": "s:SL",
-            "mangledName": "$sSL"
-          },
-          {
-            "kind": "Conformance",
-            "name": "StringProtocol",
-            "printedName": "StringProtocol",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "UTF8View",
-                "printedName": "UTF8View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UTF8View",
-                    "printedName": "Swift.String.UTF8View",
-                    "usr": "s:SS8UTF8ViewV"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "UTF16View",
-                "printedName": "UTF16View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UTF16View",
-                    "printedName": "Swift.String.UTF16View",
-                    "usr": "s:SS9UTF16ViewV"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "UnicodeScalarView",
-                "printedName": "UnicodeScalarView",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UnicodeScalarView",
-                    "printedName": "Swift.String.UnicodeScalarView",
-                    "usr": "s:SS17UnicodeScalarViewV"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "SubSequence",
-                "printedName": "SubSequence",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Substring",
-                    "printedName": "Swift.Substring",
-                    "usr": "s:Ss"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:Sy",
-            "mangledName": "$sSy"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ExpressibleByStringInterpolation",
-            "printedName": "ExpressibleByStringInterpolation",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "StringInterpolation",
-                "printedName": "StringInterpolation",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DefaultStringInterpolation",
-                    "printedName": "Swift.DefaultStringInterpolation",
-                    "usr": "s:s26DefaultStringInterpolationV"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s32ExpressibleByStringInterpolationP",
-            "mangledName": "$ss32ExpressibleByStringInterpolationP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "LosslessStringConvertible",
-            "printedName": "LosslessStringConvertible",
-            "usr": "s:s25LosslessStringConvertibleP",
-            "mangledName": "$ss25LosslessStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RangeReplaceableCollection",
-            "printedName": "RangeReplaceableCollection",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "SubSequence",
-                "printedName": "SubSequence",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Substring",
-                    "printedName": "Swift.Substring",
-                    "usr": "s:Ss"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:Sm",
-            "mangledName": "$sSm"
-          },
-          {
-            "kind": "Conformance",
-            "name": "MirrorPath",
-            "printedName": "MirrorPath",
-            "usr": "s:s10MirrorPathP",
-            "mangledName": "$ss10MirrorPathP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSString",
-                    "printedName": "Foundation.NSString",
-                    "usr": "c:objc(cs)NSString"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RegexComponent",
-            "printedName": "RegexComponent",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RegexOutput",
-                "printedName": "RegexOutput",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Substring",
-                    "printedName": "Swift.Substring",
-                    "usr": "s:Ss"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:17_StringProcessing14RegexComponentP",
-            "mangledName": "$s17_StringProcessing14RegexComponentP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Transferable",
-            "printedName": "Transferable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Representation",
-                "printedName": "Representation",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some CoreTransferable.TransferRepresentation",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TransferRepresentation",
-                        "printedName": "CoreTransferable.TransferRepresentation",
-                        "usr": "s:16CoreTransferable22TransferRepresentationP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:16CoreTransferable0B0P",
-            "mangledName": "$s16CoreTransferable0B0P"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ExpressionArgumentConvertible",
-            "printedName": "ExpressionArgumentConvertible",
-            "usr": "s:10MapboxMaps29ExpressionArgumentConvertibleP",
-            "mangledName": "$s10MapboxMaps29ExpressionArgumentConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "CALayer",
-        "printedName": "CALayer",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "addShadow",
-            "printedName": "addShadow(color:opacity:offSet:radius:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "hasDefaultArg": true,
-                "usr": "c:objc(cs)UIColor"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Float",
-                "printedName": "Swift.Float",
-                "hasDefaultArg": true,
-                "usr": "s:Sf"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGSize",
-                "printedName": "CoreFoundation.CGSize",
-                "hasDefaultArg": true,
-                "usr": "c:@S@CGSize"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "hasDefaultArg": true,
-                "usr": "s:14CoreFoundation7CGFloatV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So7CALayerC17PenguinINRendererE9addShadow5color7opacity6offSet6radiusySo7UIColorC_SfSo6CGSizeV14CoreFoundation7CGFloatVtF",
-            "mangledName": "$sSo7CALayerC17PenguinINRendererE9addShadow5color7opacity6offSet6radiusySo7UIColorC_SfSo6CGSizeV12CoreGraphics7CGFloatVtF",
-            "moduleName": "PenguinINRenderer",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)CALayer",
-        "moduleName": "QuartzCore",
-        "isOpen": true,
-        "intro_iOS": "2.0",
-        "objc_name": "CALayer",
-        "declAttributes": [
-          "Available",
-          "ObjC",
-          "NonSendable",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "UIView",
-        "printedName": "UIView",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "convertToImage",
-            "printedName": "convertToImage(padding:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIImage?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIImage",
-                    "printedName": "UIKit.UIImage",
-                    "usr": "c:objc(cs)UIImage"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "hasDefaultArg": true,
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So6UIViewC17PenguinINRendererE14convertToImage7paddingSo7UIImageCSgSd_tF",
-            "mangledName": "$sSo6UIViewC17PenguinINRendererE14convertToImage7paddingSo7UIImageCSgSd_tF",
-            "moduleName": "PenguinINRenderer",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)UIView",
-        "moduleName": "UIKit",
-        "isOpen": true,
-        "intro_iOS": "2.0",
-        "objc_name": "UIView",
-        "declAttributes": [
-          "Preconcurrency",
-          "Available",
-          "ObjC",
-          "NonSendable",
-          "Custom",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)UIResponder",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "__DefaultCustomPlaygroundQuickLookable",
-            "printedName": "__DefaultCustomPlaygroundQuickLookable",
-            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
-            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
-          }
-        ]
       }
     ],
     "json_format_version": 8
@@ -13148,49 +13236,70 @@
     {
       "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/PIRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 3605,
+      "offset": 3541,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/PIRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 4999,
+      "offset": 4937,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/PIRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 9225,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/PIRenderer.swift",
-      "kind": "BooleanLiteral",
-      "offset": 16375,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/PIRenderer.swift",
-      "kind": "BooleanLiteral",
-      "offset": 18793,
+      "offset": 8786,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/PIRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 20051,
+      "offset": 8972,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/PIRenderer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15924,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/PIRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 24481,
+      "offset": 18342,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/PIRenderer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 19600,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/PIRenderer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 24030,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/PIRenderer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 25398,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/Renderer\/LineRenderer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 315,
       "length": 5,
       "value": "false"
     },
@@ -13204,7 +13313,7 @@
     {
       "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/Models\/LocationIndicatorLayerConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 1555,
+      "offset": 1656,
       "length": 5,
       "value": "false"
     },
@@ -13303,62 +13412,83 @@
       "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/Models\/PIRendererSettings.swift",
       "kind": "FloatLiteral",
       "offset": 245,
-      "length": 7,
-      "value": "0.00001"
+      "length": 3,
+      "value": "0.0"
     },
     {
       "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/Renderer\/LocationIndicatorRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 267,
-      "length": 5,
-      "value": "false"
+      "offset": 272,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/Renderer\/LocationIndicatorRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 1702,
-      "length": 5,
-      "value": "false"
+      "offset": 318,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/Renderer\/LocationIndicatorRenderer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1921,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/Renderer\/LocationIndicatorRenderer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2116,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/MapboxManager.swift",
       "kind": "StringLiteral",
-      "offset": 812,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/MapboxManager.swift",
-      "kind": "StringLiteral",
-      "offset": 994,
+      "offset": 977,
       "length": 6,
       "value": "\"logo\""
     },
     {
       "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/MapboxManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 17619,
+      "offset": 16972,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/MapboxManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17163,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/MapboxManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 23045,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/MapboxManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 23673,
+      "offset": 24674,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/MapboxManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 25302,
+      "offset": 27458,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/MapboxManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 28086,
+      "offset": 28965,
       "length": 5,
       "value": "false"
     },
@@ -13372,35 +13502,28 @@
     {
       "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/Helpers\/Extensions.swift",
       "kind": "FloatLiteral",
-      "offset": 792,
+      "offset": 790,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/Helpers\/Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 845,
+      "offset": 843,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/Helpers\/Extensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3940,
-      "length": 1,
-      "value": "0"
-    },
-    {
       "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/Models\/CameraConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 745,
+      "offset": 752,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/Models\/CameraConfiguration.swift",
       "kind": "FloatLiteral",
-      "offset": 771,
+      "offset": 778,
       "length": 4,
       "value": "0.25"
     },
@@ -13414,14 +13537,14 @@
     {
       "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/Renderer\/BuildingRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 2871,
+      "offset": 2669,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/fawzialrifai\/Developer\/Penguin\/PenNav\/PenguinINRenderer\/PenguinINRenderer\/Renderer\/SymbolRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 4260,
+      "offset": 4205,
       "length": 5,
       "value": "false"
     },

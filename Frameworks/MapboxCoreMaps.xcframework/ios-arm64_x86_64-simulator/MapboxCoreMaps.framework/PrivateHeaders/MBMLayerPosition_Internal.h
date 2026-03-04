@@ -2,7 +2,11 @@
 
 #import <Foundation/Foundation.h>
 
-NS_SWIFT_NAME(LayerPosition)
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Specifies position of a layer that is added via addStyleLayer method.
+ */
+NS_SWIFT_NAME(__LayerPosition)
 __attribute__((visibility ("default")))
 @interface MBMLayerPosition : NSObject
 
@@ -14,7 +18,7 @@ __attribute__((visibility ("default")))
 
 - (nonnull instancetype)initWithAbove:(nullable NSString *)above
                                 below:(nullable NSString *)below
-                                   at:(nullable NSNumber *)at NS_REFINED_FOR_SWIFT;
+                                   at:(nullable NSNumber *)at;
 
 /** Layer should be positioned above specified layer id. */
 @property (nonatomic, readonly, nullable, copy) NSString *above;
@@ -23,7 +27,7 @@ __attribute__((visibility ("default")))
 @property (nonatomic, readonly, nullable, copy) NSString *below;
 
 /** Layer should be positioned at specified index in a layers stack. */
-@property (nonatomic, readonly, nullable) NSNumber *at NS_REFINED_FOR_SWIFT;
+@property (nonatomic, readonly, nullable) NSNumber *at;
 
 
 @end

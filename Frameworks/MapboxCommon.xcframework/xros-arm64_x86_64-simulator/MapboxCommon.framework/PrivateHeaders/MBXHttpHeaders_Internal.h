@@ -2,10 +2,16 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Set of commonly used HTTP header strings.
+ */
 NS_SWIFT_NAME(HttpHeaders)
 __attribute__((visibility ("default")))
 @interface MBXHttpHeaders : NSObject
 
+    /** The Accept HTTP header */
+    @property (nonatomic, class, readonly) NSString * Accept;
     /** The Age HTTP header */
     @property (nonatomic, class, readonly) NSString * Age;
     /** The Cache-Control HTTP header. */
@@ -48,5 +54,13 @@ __attribute__((visibility ("default")))
     @property (nonatomic, class, readonly) NSString * XMapboxSDKs;
     /** Custom temporarily header to pass custom user agent fragment. */
     @property (nonatomic, class, readonly) NSString * XTmpCustomUserAgentFragment;
+    /** Indicate interest in integrity fields. */
+    @property (nonatomic, class, readonly) NSString * WantReprDigest;
+    /** Provides a digest of the selected representation data of the target resource. */
+    @property (nonatomic, class, readonly) NSString * XReprDigest;
+    /** Provides a digest of the selected data of the target resource. */
+    @property (nonatomic, class, readonly) NSString * XCanonicalDigest;
+    /** The maximum time a resource can be used while offline, in seconds. */
+    @property (nonatomic, class, readonly) NSString * XMapboxOfflineTtl;
 
 @end

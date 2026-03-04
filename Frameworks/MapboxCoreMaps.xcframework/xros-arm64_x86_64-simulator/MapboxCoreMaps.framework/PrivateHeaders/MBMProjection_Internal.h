@@ -5,7 +5,12 @@
 
 @class MBMMercatorCoordinate;
 @class MBMProjectedMeters;
+@class MBMVec2;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Collection of [Spherical Mercator](http://docs.openlayers.org/library/spherical_mercator.html) projection methods.
+ */
 NS_SWIFT_NAME(Projection)
 __attribute__((visibility ("default")))
 @interface MBMProjection : NSObject
@@ -71,5 +76,27 @@ __attribute__((visibility ("default")))
  */
 + (CLLocationCoordinate2D)unprojectForCoordinate:(nonnull MBMMercatorCoordinate *)coordinate
                                        zoomScale:(double)zoomScale;
+/**
+ * Calculates the scale factor for a given latitude.
+ *
+ * @param latitude The latitude in degrees for which to compute the scale.
+ * @return The scale factor (as a 64-bit floating point number) at the specified latitude.
+ */
++ (double)getLatitudeScaleForLatitude:(double)latitude;
+/**
+ * Converts a geographic coordinate to its corresponding
+ * Mercator projection coordinates (X, Y).
+ *
+ * @param coordinate The geographic coordinate to convert.
+ * @return A Vec2 representing the X and Y coordinates in the Mercator projection.
+ */
++ (nonnull MBMVec2 *)latLngToMercatorXYForCoordinate:(CLLocationCoordinate2D)coordinate __attribute((ns_returns_retained));
+/**
+ * Calculate map pixel width at given scale.
+ *
+ * @param scale The current zoom applied on the map.
+ * @returns Map pixel width.
+ */
++ (double)worldSizeForScale:(double)scale;
 
 @end

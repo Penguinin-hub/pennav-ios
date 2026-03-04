@@ -3,6 +3,8 @@
 #import <Foundation/Foundation.h>
 
 @class MBMCanonicalTileID;
+@class MBMDepthRange;
+@protocol MBMCustomLayerMapProjection;
 @protocol MBMElevationData;
 
 /** Parameters that define the current camera position for a `CustomLayerHost::render()` function. */
@@ -25,8 +27,10 @@ __attribute__((visibility ("default")))
                                 pitch:(double)pitch
                           fieldOfView:(double)fieldOfView
                      projectionMatrix:(nonnull NSArray<NSNumber *> *)projectionMatrix
+                           depthRange:(nonnull MBMDepthRange *)depthRange
                         elevationData:(nullable id<MBMElevationData>)elevationData
-                     renderToTilesIDs:(nullable NSArray<MBMCanonicalTileID *> *)renderToTilesIDs __attribute__((deprecated("This constructor is internal and to be used from within Mapbox SDK only.")));
+                     renderToTilesIDs:(nullable NSArray<MBMCanonicalTileID *> *)renderToTilesIDs
+                           projection:(nonnull id<MBMCustomLayerMapProjection>)projection __attribute__((deprecated("This constructor is internal and to be used from within Mapbox SDK only.")));
 
 - (nonnull instancetype)initWithWidth:(double)width
                                height:(double)height
@@ -37,7 +41,9 @@ __attribute__((visibility ("default")))
                                 pitch:(double)pitch
                           fieldOfView:(double)fieldOfView
                      projectionMatrix:(nonnull NSArray<NSNumber *> *)projectionMatrix
-                        elevationData:(nullable id<MBMElevationData>)elevationData __attribute__((deprecated("This constructor is deprecated and will be removed.")));
+                           depthRange:(nonnull MBMDepthRange *)depthRange
+                        elevationData:(nullable id<MBMElevationData>)elevationData
+                           projection:(nonnull id<MBMCustomLayerMapProjection>)projection __attribute__((deprecated("This constructor is deprecated and will be removed.")));
 
 /** The width. */
 @property (nonatomic, readonly) double width;
@@ -66,13 +72,21 @@ __attribute__((visibility ("default")))
 /** The projection matrix used for rendering. It projects spherical mercator coordinates to gl coordinates. */
 @property (nonatomic, readonly, nonnull, copy) NSArray<NSNumber *> *projectionMatrix;
 
+/** Depth range used to render 3D content. The default range is [0, 1] but it might vary based on the active features such as terrain and map projection. */
+@property (nonatomic, readonly, nonnull) MBMDepthRange *depthRange;
+
 /** If terrain is enabled, provides value to elevation data from render thread. Empty if terrain is not enabled. */
 @property (nonatomic, readonly, nullable) id<MBMElevationData> elevationData;
 
 /**
- * Note! This property is an experimental feature. It can be changed or removed in future versions.
+ * Note! This field is experimental. It can be changed or removed in future versions.
+ *
+ * If terrain or globe are enabled, provides list of all tile textures that are draped
+ * (rendered to in orthographic mode using CustomLayerHost's renderToTile and wrapped over terrain or globe).
  */
 @property (nonatomic, readonly, nullable, copy) NSArray<MBMCanonicalTileID *> *renderToTilesIDs;
 
+/** Interface providing utility functions for rendering primitives on the currently active map projection */
+@property (nonatomic, readonly, nonnull) id<MBMCustomLayerMapProjection> projection;
 
 @end

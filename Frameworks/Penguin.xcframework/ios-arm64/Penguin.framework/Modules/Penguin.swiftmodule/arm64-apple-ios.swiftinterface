@@ -1,10 +1,11 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
 // swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Penguin
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import AdSupport
 import CoreBluetooth
 import CoreData
+import CoreGraphics
 import CoreLocation
 import CoreMotion
 import Darwin
@@ -19,128 +20,171 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import Darwin.sys.sysctl
-@objc @_inheritsConvenienceInitializers final public class POI : ObjectiveC.NSObject {
-  final public var ID: Swift.Int
-  final public var floorID: Swift.Int
+@_hasMissingDesignatedInitializers final public class POI {
+  final public var id: Swift.Int
+  final public var floorId: Swift.Int
   final public var zonePoints: Swift.String?
   final public var name: Swift.String
   final public var poiDescription: Swift.String
   final public var iconUrl: Swift.String?
   final public func centerPoint() -> CoreFoundation.CGPoint
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func poiZone() -> QuartzCore.CAShapeLayer?
-  @objc override dynamic public init()
+  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class UtilGps : ObjectiveC.NSObject {
   public static func CoordinateInsidePolygon(longitude: Swift.Double, latitude: Swift.Double, pointsListLongitude: [Swift.Double], pointsListLatitude: [Swift.Double]) -> Swift.Bool
   public static func Angle2D(y1: Swift.Double, x1: Swift.Double, y2: Swift.Double, x2: Swift.Double) -> Swift.Double
   public static func isValidGpsCoordinate(latitude: Swift.Double, longitude: Swift.Double) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func GetXYold(scaleFactorX: Swift.Double, scaleFactorY: Swift.Double, angle: Swift.Double, originlonglat: [Swift.Double], longLatPoint: [Swift.Double], isFromTimer: Swift.Bool = false) -> CoreFoundation.CGPoint?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func GetLongLatold(scaleFactorX: Swift.Double, scaleFactorY: Swift.Double, angle: Swift.Double, xyPoints: CoreFoundation.CGPoint, originlonglat: [Swift.Double]) -> [Swift.Double]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func Rotate(xDifference: Swift.Double, YDifference: Swift.Double, angle: Swift.Double, originlonglat: [Swift.Double]?) -> [Swift.Double]?
+  #endif
   public func swapEdges(basePoint: CoreFoundation.CGPoint, toBeSwappedEdges: [Penguin.Edge]) -> [Penguin.Edge]
-  public static func convertPoint(to point: CoreFoundation.CGPoint, venue: Penguin.Venue, floor: Penguin.Floor) -> CoreLocation.CLLocationCoordinate2D?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func convertPoint(to point: CoreFoundation.CGPoint, venue: Penguin.Venue, floor: Penguin.Floor) -> _LocationEssentials.CLLocationCoordinate2D?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func convertToLongLat(floorAlignmentParameters: Penguin.AlignmentParameters, point: CoreFoundation.CGPoint) -> [Swift.Double]?
-  public static func getLongitude(for point: CoreFoundation.CGPoint, on floor: Penguin.Floor) -> CoreLocation.CLLocationCoordinate2D?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func getLongitude(for point: CoreFoundation.CGPoint, on floor: Penguin.Floor) -> _LocationEssentials.CLLocationCoordinate2D?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func convertToXY(floorAlignmentParameters: Penguin.AlignmentParameters, longLatPoint: [Swift.Double]) -> CoreFoundation.CGPoint?
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(SystemSetting) public class SystemSetting : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public struct GetVenueGatesDistancesResponse : Swift.Codable {
+  public let result: Swift.Bool
+  public let data: [Penguin.VenueGate]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct VenueGate : Swift.Codable {
+  public var id: Swift.Int?
+  public var floorId: Swift.Int?
+  public var x: Swift.Int?
+  public var y: Swift.Int?
+  public var edgeId: Swift.Int?
+  public var pathDistance: Swift.Double?
+  public var title: Swift.String?
+  public var isSelected: Swift.Bool?
+  public var isCampusGate: Swift.Bool?
+  public var latitude: Swift.Double?
+  public var longitude: Swift.Double?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var centerCoordinate: _LocationEssentials.CLLocationCoordinate2D? {
+    get
+  }
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @objc(SystemSetting) nonisolated public class SystemSetting : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
 extension Penguin.Edges_Table {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Penguin.Edges_Table>
-  @objc @NSManaged dynamic public var id: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var id: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var floorID: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var floorID: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var x1: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var x1: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var y1: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var y1: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var p1FloorID: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var p1FloorID: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var x2: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var x2: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var y2: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var y2: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var p2floorID: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var p2floorID: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var venueID: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var venueID: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var p1VenueID: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var p1VenueID: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var p2VenueID: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var p2VenueID: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var connectedtheta: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var connectedtheta: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var connecteddirection: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var connecteddirection: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var campusID: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var campusID: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var outdoor: Swift.Bool {
+  @objc @NSManaged nonisolated dynamic public var outdoor: Swift.Bool {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var p1Type: Swift.String {
+  @objc @NSManaged nonisolated dynamic public var p1Type: Swift.String {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var longitude1: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var longitude1: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var longitude2: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var longitude2: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var latitude1: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var latitude1: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var latitude2: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var latitude2: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var p2Type: Swift.String {
+  @objc @NSManaged nonisolated dynamic public var p2Type: Swift.String {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var type: Swift.String {
+  @objc @NSManaged nonisolated dynamic public var type: Swift.String {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var transitionType: Swift.String {
+  @objc @NSManaged nonisolated dynamic public var transitionType: Swift.String {
     @objc get
     @objc set
   }
@@ -155,7 +199,9 @@ public enum HttpMethod : Swift.String {
   case DELETE
   case PUT
   case PATCH
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -163,15 +209,21 @@ public enum HttpMethod : Swift.String {
 }
 @_inheritsConvenienceInitializers @objc public class PIAPIManager : ObjectiveC.NSObject {
   public static var shared: Penguin.PIAPIManager
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public func call(url: Swift.String, method: Penguin.HttpMethod, parameters: [Swift.String : Any]? = [String: Any](), completion: ((Penguin.PIResponse<Any?>) -> Swift.Void)? = nil) -> Foundation.URLSessionDataTask?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public func call<T>(url: Swift.String, method: Penguin.HttpMethod, parameters: [Swift.String : Any]? = [String: String](), decodeTo: T.Type?, complete: @escaping (Penguin.PIResponse<T?>) -> Swift.Void) -> Foundation.URLSessionDataTask? where T : Swift.Decodable, T : Swift.Encodable
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
 public protocol PIDirectionsServiceDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   func onRoutePathReady(route: Penguin.Route?)
+  #endif
   func onFailLoadRoute(errorCode: Penguin.ErrorCode)
   func onStartNavigation()
   func onStopNavigation()
@@ -181,11 +233,15 @@ public protocol PIDirectionsServiceDelegate {
   func onErrorVenue(status: Swift.Bool)
   func onReachDestination()
   func onReachedEndSubPath(type: Penguin.NodeType)
+  #if compiler(>=5.3) && $NonescapableTypes
   func onErrorPathReady(errorEdges: [Penguin.ErrorEdge]?)
+  #endif
   func onSubPathChange(subPath: Penguin.NavigationSubPath)
 }
 extension Penguin.PIDirectionsServiceDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func onRoutePathReady(route: Penguin.Route?)
+  #endif
   public func onFailLoadRoute(errorCode: Penguin.ErrorCode)
   public func onStartNavigation()
   public func onStopNavigation()
@@ -195,345 +251,420 @@ extension Penguin.PIDirectionsServiceDelegate {
   public func onErrorVenue(status: Swift.Bool)
   public func onReachDestination()
   public func onReachedEndSubPath(type: Penguin.NodeType)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func onErrorPathReady(errorEdges: [Penguin.ErrorEdge]?)
+  #endif
   public func onSubPathChange(subPath: Penguin.NavigationSubPath)
 }
 extension Penguin.PoIPolygonsTable {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Penguin.PoIPolygonsTable>
-  @objc @NSManaged dynamic public var id: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var id: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var floorid: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var floorid: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var name: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var name: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var zoonpoint: Foundation.Data? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var zoonpoint: Foundation.Data? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var zoon_center_point: Foundation.Data? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var zoon_center_point: Foundation.Data? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var categorycolor: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var categorycolor: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var iconUrl: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var iconUrl: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var framedIconUrl: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var framedIconUrl: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var landmark: Swift.Bool {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var landmark: Swift.Bool {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var landmarkIconUrl: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var landmarkIconUrl: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var venueId: Swift.Int16 {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var venueId: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var categoryId: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var categoryId: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var extrusionHeight: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var extrusionHeight: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var modelUri: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var modelUri: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var modelLatitude: Swift.Double {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var modelLatitude: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var modelLongitude: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var modelLongitude: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var showOnMap: Swift.Bool {
+  @objc @NSManaged nonisolated dynamic public var showOnMap: Swift.Bool {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var landmarkFilledIconUrl: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var landmarkFilledIconUrl: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var schedule: Foundation.Data? {
+    @objc get
+    @objc set
+  }
+  #endif
 }
 extension Penguin.FloorSettings_Table {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Penguin.FloorSettings_Table>
-  @objc @NSManaged dynamic public var floorID: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var floorID: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var descriptions: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var descriptions: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var value: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var value: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension Penguin.Localize {
-  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Penguin.Localize>
-  @objc @NSManaged dynamic public var id: Swift.Int16 {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var languageCode: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var code: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var type: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var value: Swift.String? {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var id: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var type: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var key: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var value_type: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var value: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension Penguin.Gate_node {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Penguin.Gate_node>
-  @objc @NSManaged dynamic public var campus_id: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var campus_id: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var edge_id: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var edge_id: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var outdoor: Swift.Bool {
+  @objc @NSManaged nonisolated dynamic public var outdoor: Swift.Bool {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var update_status: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var update_status: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var id: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var id: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var venue_id: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var venue_id: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var floor_id: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var floor_id: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var type: Swift.String {
+  @objc @NSManaged nonisolated dynamic public var type: Swift.String {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var x: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var x: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var y: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var y: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var longitude: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var longitude: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var latitude: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var latitude: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var is_floor_gate_node: Swift.Bool {
+  @objc @NSManaged nonisolated dynamic public var is_floor_gate_node: Swift.Bool {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var is_connected_gate_node: Swift.Bool {
+  @objc @NSManaged nonisolated dynamic public var is_connected_gate_node: Swift.Bool {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var isCampusGate: Swift.Bool {
+  @objc @NSManaged nonisolated dynamic public var isCampusGate: Swift.Bool {
     @objc get
     @objc set
   }
 }
-@_inheritsConvenienceInitializers @objc(UUID_Table) public class UUID_Table : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+@_inheritsConvenienceInitializers @objc(UUID_Table) nonisolated public class UUID_Table : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(FloorSettings_Table) public class FloorSettings_Table : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+@_inheritsConvenienceInitializers @objc(FloorSettings_Table) nonisolated public class FloorSettings_Table : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
+}
+public class Schedule : Swift.Codable {
+  public var dayNumber: Swift.Int
+  public var openingTime: Swift.String, closingTime: Swift.String
+  public var offDay: Swift.Bool
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 extension Penguin.VenueSettingsTable {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Penguin.VenueSettingsTable>
-  @objc @NSManaged dynamic public var venueID: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var venueID: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var descriptions: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var descriptions: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var value: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var value: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension Penguin.Floors_Table {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Penguin.Floors_Table>
-  @objc @NSManaged dynamic public var id: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var id: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var name: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var name: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var descriptions: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var descriptions: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var image: Foundation.Data? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var image: Foundation.Data? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var scale_factor: Swift.Double {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var scale_factor: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var level: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var level: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var icon_id: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var icon_id: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var map_url: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var map_url: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var venue_id: Swift.Int16 {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var venue_id: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var map_north: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var map_north: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var threshold: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var threshold: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var far_dist: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var far_dist: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var near_dest: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var near_dest: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var serverConnectivityThreshold: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var serverConnectivityThreshold: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var alignmentCenter: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var alignmentCenter: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var alignmentOrigin: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var alignmentOrigin: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var alignmentScale: Swift.Double {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var alignmentScale: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var alignmentScaleX: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var alignmentScaleX: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var alignmentScaleY: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var alignmentScaleY: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var alignmentRotation: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var alignmentRotation: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var instructionDistanceThreshold: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var instructionDistanceThreshold: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var isDefault: Swift.Bool {
+  @objc @NSManaged nonisolated dynamic public var isDefault: Swift.Bool {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var isUnderground: Swift.Bool {
+  @objc @NSManaged nonisolated dynamic public var isUnderground: Swift.Bool {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var xyToLongParameters: [Swift.Double] {
+  @objc @NSManaged nonisolated dynamic public var xyToLongParameters: [Swift.Double] {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var xyToLatParameters: [Swift.Double] {
+  @objc @NSManaged nonisolated dynamic public var xyToLatParameters: [Swift.Double] {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var longlatToXParameters: [Swift.Double] {
+  @objc @NSManaged nonisolated dynamic public var longlatToXParameters: [Swift.Double] {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var longlatToYParameters: [Swift.Double] {
+  @objc @NSManaged nonisolated dynamic public var longlatToYParameters: [Swift.Double] {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var geoJSONURL: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var geoJSONURL: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var mapWidth: Swift.Int16 {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var mapWidth: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var mapHeight: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var mapHeight: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var label: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var label: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var updateStatus: Swift.Int16 {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var updateStatus: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var isUncover: Swift.Bool {
+  @objc @NSManaged nonisolated dynamic public var isUncover: Swift.Bool {
     @objc get
     @objc set
   }
 }
-@_inheritsConvenienceInitializers @objc(VenueTable) public class VenueTable : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+@_inheritsConvenienceInitializers @objc(VenueTable) nonisolated public class VenueTable : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
 public struct PoIPolygonsModel : Swift.Codable {
@@ -542,9 +673,9 @@ public struct PoIPolygonsModel : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct PoiPolygon : Swift.Codable {
-  public var id: Swift.Int?, floorID: Swift.Int?
+  public var id: Swift.Int?, floorId: Swift.Int?
   public var name: [Penguin.Translatable]?
-  public var localizedName: Swift.String?
+  public var title: Swift.String?
   public var zonePoints: [Penguin.ZonePoint]?
   public var zoneCenterPoint: Penguin.ZoneCenterPoint?
   public var categoryColor: Swift.String?
@@ -560,15 +691,15 @@ public struct PoiPolygon : Swift.Codable {
   public var extrusionHeight: Swift.Int
   public var threeDModel: Penguin.ThreeDimensionalModel?
   public var showOnMap: Swift.Bool?
-  public var polygonCoordinates: [CoreLocation.CLLocationCoordinate2D] {
+  public var schedule: [Penguin.Schedule]?
+  public var polygonCoordinates: [_LocationEssentials.CLLocationCoordinate2D] {
     get
   }
-  public var centerCoordinate: CoreLocation.CLLocationCoordinate2D? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var centerCoordinate: _LocationEssentials.CLLocationCoordinate2D? {
     get
   }
-  public var isIndoor: Swift.Bool {
-    get
-  }
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -594,33 +725,35 @@ public struct ZonePoint : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-extension Swift.Double {
-  public func toDeg() -> Swift.Double
-  public func toRad() -> Swift.Double
-}
-@_inheritsConvenienceInitializers @objc(Last_update_Table) public class Last_update_Table : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+@_inheritsConvenienceInitializers @objc(Last_update_Table) nonisolated public class Last_update_Table : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(VenueSettingsTable) public class VenueSettingsTable : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+@_inheritsConvenienceInitializers @objc(VenueSettingsTable) nonisolated public class VenueSettingsTable : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(CategoryTable) public class CategoryTable : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+@_inheritsConvenienceInitializers @objc(CategoryTable) nonisolated public class CategoryTable : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
-public struct CampusShortestPathResponse : Swift.Codable {
+public struct CampusEntrancesResponse : Swift.Codable {
   public var result: Swift.Bool?
   public var message: Swift.String?
-  public var data: [Penguin.ShortestPathDistance]?
+  public var data: [Penguin.CampusEntrance]?
   public var errorCode: Swift.String?
   public var errorNumber: Swift.Int?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct ShortestPathDistance : Swift.Codable {
-  public var id: Swift.Int?, x: Swift.Int?, y: Swift.Int?, floorId: Swift.Int?, edgesCount: Swift.Int?
+public struct CampusEntrance : Swift.Codable {
+  public var id: Swift.Int?, x: Swift.Int?, y: Swift.Int?, floorId: Swift.Int?
   public var latitude: Swift.Double?
   public var longitude: Swift.Double?
   public var distance: Swift.Double?
@@ -629,20 +762,9 @@ public struct ShortestPathDistance : Swift.Codable {
 }
 @_hasMissingDesignatedInitializers public class PIGeofence {
   public static var shared: Penguin.PIGeofence
+  #if compiler(>=5.3) && $NonescapableTypes
   public func loadGeofence(_ completionHandler: @escaping ([Penguin.GeofenceRegion], Foundation.NSError?) -> ())
-  @objc deinit
-}
-public enum LangNames : Swift.String {
-  case ar
-  case en
-  case Default
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-@_hasMissingDesignatedInitializers @objc public class LocalizableModel : ObjectiveC.NSObject {
+  #endif
   @objc deinit
 }
 public struct CategoryResponse : Swift.Codable {
@@ -655,11 +777,11 @@ public struct POICategory : Swift.Codable {
   public var color: Swift.String?
   public var poiCount: Swift.Int?
   public var localizedName: Swift.String?
-  public var localizedDescripition: Swift.String?
+  public var localizedDescription: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@objc public class ErrorEdge : ObjectiveC.NSObject, Swift.Codable {
+public class ErrorEdge : Swift.Codable {
   final public let campusID: Swift.Int
   final public let venueID: Swift.Int
   final public let floorID: Swift.Int
@@ -687,18 +809,20 @@ public struct POICategory : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@_inheritsConvenienceInitializers @objc(Geofence_Table) public class Geofence_Table : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+@_inheritsConvenienceInitializers @objc(Geofence_Table) nonisolated public class Geofence_Table : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class PenNavSystemConfiguration {
   public static var isDirectoryEnabled: Swift.Bool {
     get
   }
-  public static var isLocationMessageUIDisabled: Swift.Bool {
+  public static var isLocationMessageUIEnabled: Swift.Bool {
     get
   }
-  public static var isHapticFeedbackEnabled: Swift.Bool {
+  public static var isHapticsEnabled: Swift.Bool {
     get
   }
   public static var isLBMEnabled: Swift.Bool {
@@ -720,6 +844,12 @@ public struct POICategory : Swift.Codable {
     get
   }
   public static var parkingAvailabilityRefreshInterval: Swift.Double {
+    get
+  }
+  public static var supportsOffCampusNavigation: Swift.Bool {
+    get
+  }
+  public static var usesOfflinePositioningEngine: Swift.Bool {
     get
   }
   @objc deinit
@@ -756,10 +886,12 @@ final public class Gnode {
   final public var lng: Swift.Double
   final public var lat: Swift.Double
   final public var type: Penguin.GateType
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var nodeType: Penguin.NodeType? {
     get
   }
-  final public var centerCoordinate: CoreLocation.CLLocationCoordinate2D {
+  #endif
+  final public var centerCoordinate: _LocationEssentials.CLLocationCoordinate2D {
     get
   }
   public init()
@@ -769,15 +901,17 @@ public struct ThreeDimensionalModel : Swift.Codable {
   public var url: Swift.String?
   public var centerLongitude: Swift.Double?
   public var centerLatitude: Swift.Double?
-  public var centerCoordinate: CoreLocation.CLLocationCoordinate2D? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var centerCoordinate: _LocationEssentials.CLLocationCoordinate2D? {
     get
   }
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class Venue : ObjectiveC.NSObject {
-  final public var venueID: Swift.Int
-  final public var venueName: Swift.String
+@_hasMissingDesignatedInitializers final public class Venue {
+  final public var id: Swift.Int
+  final public var title: Swift.String
   final public var venueArabicName: Swift.String
   final public var isWifi: Swift.Bool
   final public var isBLE: Swift.Bool
@@ -787,37 +921,39 @@ public struct ThreeDimensionalModel : Swift.Codable {
   final public var venueSettings: Penguin.VenueSettings
   final public var latPoints: [Swift.Double]
   final public var lngPoints: [Swift.Double]
-  final public var points: [CoreLocation.CLLocationCoordinate2D]
+  final public var points: [_LocationEssentials.CLLocationCoordinate2D]
   final public var centerPoint: Swift.String
   final public var isDefault: Swift.Bool
   final public var isUnderground: Swift.Bool
   final public var extrusionHeight: Swift.Int
   final public var threeDModel: Penguin.ThreeDimensionalModel?
+  final public var connectedVenues: [Swift.Int]
   final public var level: Penguin.MapLevel {
     get
   }
-  final public var trimmedName: Swift.String {
+  convenience public init(venueID: Swift.Int = 1, venueName: Swift.String = "Test Venue")
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var centerCoordinate: _LocationEssentials.CLLocationCoordinate2D? {
     get
   }
-  final public var connectedVenues: [Swift.Int]
-  final public var centerCoordinate: CoreLocation.CLLocationCoordinate2D? {
-    get
-  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func getCenterPoints() -> [Swift.Double]?
-  final public func findMaxLatitudePoint() -> CoreLocation.CLLocationCoordinate2D?
-  final public var polygonCoordinates: [CoreLocation.CLLocationCoordinate2D] {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func findMaxLatitudePoint() -> _LocationEssentials.CLLocationCoordinate2D?
+  #endif
+  final public var polygonCoordinates: [_LocationEssentials.CLLocationCoordinate2D] {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(data: [Swift.String : Any]?)
+  #endif
   @objc deinit
 }
-public protocol NodeRepresentable {
-  var nodeType: Penguin.NodeType? { get }
-  var isUpEscalator: Swift.Bool { get }
-  var isDownEscalator: Swift.Bool { get }
-}
 @_hasMissingDesignatedInitializers final public class GateNodeModel {
-  final public var id: Swift.Int?, venueID: Swift.Int?, floorID: Swift.Int?
+  final public var id: Swift.Int
+  final public var venueID: Swift.Int, floorID: Swift.Int
   final public var campusID: Swift.Int?, edgeID: Swift.Int?
   final public var outdoor: Swift.Bool?, is_floor_gate_node: Swift.Bool?, is_connected_gate_node: Swift.Bool?
   final public var updateStatus: Swift.Int?
@@ -825,14 +961,20 @@ public protocol NodeRepresentable {
   final public var longitude: Swift.Double?, latitude: Swift.Double?
   final public var name: Swift.String?
   final public var type: Penguin.NodeType?
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var nodeType: Penguin.NodeType? {
     get
   }
+  #endif
   final public var isCampusGate: Swift.Bool?
-  final public var centerCoordinate: CoreLocation.CLLocationCoordinate2D? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var centerCoordinate: _LocationEssentials.CLLocationCoordinate2D? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func toCGPoint() -> CoreFoundation.CGPoint?
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class VenueSettings {
@@ -857,10 +999,10 @@ public protocol NodeRepresentable {
   public func isMinewBecon() -> Swift.Bool
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class Floor : ObjectiveC.NSObject {
-  public var floorID: Swift.Int
-  public var floorVenueID: Swift.Int
-  public var floorName: Swift.String
+public class Floor : Swift.Hashable, Swift.Equatable {
+  public var id: Swift.Int
+  public var venueId: Swift.Int
+  public var title: Swift.String
   public var floorDescription: Swift.String
   public var floorMapUrl: Swift.String
   public var floorMapImage: UIKit.UIImage
@@ -884,17 +1026,28 @@ public protocol NodeRepresentable {
   public var level: Penguin.MapLevel {
     get
   }
-  public var setting: Penguin.FloorSettings? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var settings: Penguin.FloorSettings? {
     get
   }
-  @objc override dynamic public init()
+  #endif
+  public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(floorID: Swift.Int, venueID: Swift.Int, name: Swift.String, description: Swift.String, mapUrl: Swift.String, mapScaleFactor: Swift.Double, iconID: Swift.Int, floorOrder: Swift.Int, alignmentCenter: Swift.String?, alignmentOrigin: Swift.String, alignmentScale: Swift.Double = 0.0, alignmentScaleX: Swift.Double, alignmentScaleY: Swift.Double, alignmentRotation: Swift.Double, isDefault: Swift.Bool, isUnderground: Swift.Bool, label: Swift.String, goeJsonUrl: Swift.String, updateStatus: Swift.Int, xyToLongParameters: [Swift.Double], xyToLatParameters: [Swift.Double], longlatToXParameters: [Swift.Double], longlatToYParameters: [Swift.Double], uncovered: Swift.Bool)
-  public func getAnchorCoordinate() -> [CoreLocation.CLLocationCoordinate2D]
-  public var centerCoordinate: CoreLocation.CLLocationCoordinate2D? {
+  #endif
+  convenience public init(floorID: Swift.Int = 1, floorVenueID: Swift.Int = 1, floorName: Swift.String = "Test Floor", floorOrder: Swift.Int = 0, uncovered: Swift.Bool = false)
+  public func getAnchorCoordinate() -> [_LocationEssentials.CLLocationCoordinate2D]
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var centerCoordinate: _LocationEssentials.CLLocationCoordinate2D? {
     get
   }
-  public func getUrlFloorName() -> Swift.String?
+  #endif
+  public static func == (lhs: Penguin.Floor, rhs: Penguin.Floor) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   @objc deinit
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public struct FloorSettings {
   public var floorMapNorth: Swift.Int
@@ -920,17 +1073,17 @@ public struct FloorSettings {
   public var gPSTimerDefaultValue: Swift.Int
   public var gPSStartLogicDistanceThreshold: Swift.Int
   public var DefaultZoomLevel: CoreFoundation.CGFloat
-  public var NavigationReachDistance: Swift.Int
+  public var NavigationReachDistance: Swift.Double
   public var instructionChangeDistanceThreshold: Swift.Double
   public var epNotTrustdCountThreshold: Swift.Int
   public init()
-  public init(mapNorth: Swift.Int, threshold: Swift.Int, farDistance: Swift.Int, nearDistance: Swift.Int, notConnectedEdgeDistance: Swift.Int, serverConnectivityThreshold: Swift.Int, errorDetectionDistance: Swift.Int, errorDetectionCount: Swift.Int, elevatorConnectedDistance: Swift.Int, defaultStepLength: Swift.Double, nonIMUstepCount: Swift.Int, particleResetCounter: Swift.Int, height: Swift.Double, transCounterThreshold: Swift.Int, flatCounterThreshold: Swift.Int, transitionReadingsCount: Swift.Int, deltaEscalator: Swift.Double, ePTrustThreshold: Swift.Double, gateNodeDistanceThreshold: Swift.Int, gPSTimerThreshold: Swift.Int, gPSTimerDefaultValue: Swift.Int, gPSStartLogicDistanceThreshold: Swift.Int, NavigationReachDistance: Swift.Int, DefaultZoomLevel: Swift.Double, instructionChangeDistanceThreshold: Swift.Double, epNotTrustdCountThreshold: Swift.Int)
+  public init(mapNorth: Swift.Int, threshold: Swift.Int, farDistance: Swift.Int, nearDistance: Swift.Int, notConnectedEdgeDistance: Swift.Int, serverConnectivityThreshold: Swift.Int, errorDetectionDistance: Swift.Int, errorDetectionCount: Swift.Int, elevatorConnectedDistance: Swift.Int, defaultStepLength: Swift.Double, nonIMUstepCount: Swift.Int, particleResetCounter: Swift.Int, height: Swift.Double, transCounterThreshold: Swift.Int, flatCounterThreshold: Swift.Int, transitionReadingsCount: Swift.Int, deltaEscalator: Swift.Double, ePTrustThreshold: Swift.Double, gateNodeDistanceThreshold: Swift.Int, gPSTimerThreshold: Swift.Int, gPSTimerDefaultValue: Swift.Int, gPSStartLogicDistanceThreshold: Swift.Int, NavigationReachDistance: Swift.Double, DefaultZoomLevel: Swift.Double, instructionChangeDistanceThreshold: Swift.Double, epNotTrustdCountThreshold: Swift.Int)
   public func floorServerConnectivityThresholdInSeconds() -> Swift.Double
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Edge : ObjectiveC.NSObject {
-  public var edgeID: Swift.Int
-  public var edgeFloorID: Swift.Int
-  public var venueID: Swift.Int
+@_hasMissingDesignatedInitializers public class Edge {
+  public var id: Swift.Int
+  public var floorId: Swift.Int
+  public var venueId: Swift.Int
   public var p1VenueID: Swift.Int
   public var p2VenueID: Swift.Int
   public var edgeX1: Swift.Int
@@ -954,8 +1107,8 @@ public struct FloorSettings {
   public var longitude2: Swift.Double
   public var latitude2: Swift.Double
   public func edgeLength() -> Swift.Double
-  public func p1toCLLocationCoordinate2D() -> CoreLocation.CLLocationCoordinate2D
-  public func p2toCLLocationCoordinate2D() -> CoreLocation.CLLocationCoordinate2D
+  public func p1toCLLocationCoordinate2D() -> _LocationEssentials.CLLocationCoordinate2D
+  public func p2toCLLocationCoordinate2D() -> _LocationEssentials.CLLocationCoordinate2D
   public func p1() -> CoreFoundation.CGPoint
   public func p2() -> CoreFoundation.CGPoint
   public func deltaX() -> Swift.Int
@@ -981,14 +1134,14 @@ public struct PenguinPoint {
   public var accuracy: Swift.Int
   public var pointTypeScan: Swift.Int
 }
-@_inheritsConvenienceInitializers @objc open class NavigationSubPath : ObjectiveC.NSObject {
-  public var floorID: Swift.Int
-  public var venueID: Swift.Int
+open class NavigationSubPath {
+  public var floorId: Swift.Int
+  public var venueId: Swift.Int
   public var firstEdge: Penguin.Edge
   public var pathIndex: Swift.Int
   public var pathEdges: [Penguin.Edge]
   public var subPathsSize: Swift.Int
-  @objc override dynamic public init()
+  public init()
   public init(venueID: Swift.Int, floorID: Swift.Int, subPathIndex: Swift.Int, firstEdge: Penguin.Edge, subPathEdges: [Penguin.Edge], subPathsSize: Swift.Int = 0)
   @objc deinit
 }
@@ -1003,7 +1156,9 @@ public struct NextRoutPathData {
 public enum CampusError : Swift.String {
   case invalidCampusId
   case noCampusListFound
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -1012,40 +1167,52 @@ public enum CampusError : Swift.String {
 @_hasMissingDesignatedInitializers public class PICampusManager {
   public static var shared: Penguin.PICampusManager
   public func setCampusId(campusId: Swift.Int)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getSelectedCampusId() -> Swift.Int?
+  #endif
   public func getCampuses() -> [Penguin.Campus]
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getCampusListing(baseUrl: Swift.String, serviceName: Swift.String, completion: @escaping ([Penguin.Campus]?) -> ())
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func validateSelectedCampusId() -> (valid: Swift.Bool, error: Penguin.CampusError?)
+  #endif
   @objc deinit
 }
 extension Penguin.SystemSetting {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Penguin.SystemSetting>
-  @objc @NSManaged dynamic public var desc: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var desc: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var value: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var value: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension Penguin.UUID_Table {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Penguin.UUID_Table>
-  @objc @NSManaged dynamic public var id: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var id: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var uuid_data: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var uuid_data: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var update_status: Swift.Int16 {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var update_status: Swift.Int16 {
     @objc get
     @objc set
   }
 }
 extension Penguin.PILocationManager {
-  final public func setUserName(userID: Swift.String) -> Penguin.PILocationManager
+  final public func setUsername(_ username: Swift.String) -> Penguin.PILocationManager
   @discardableResult
   final public func setAPIKey(key: Swift.String) -> Penguin.PILocationManager
   @discardableResult
@@ -1090,9 +1257,12 @@ extension Penguin.PILocationManager {
   final public func setConnectivityTimeOutCount(count: Swift.Int)
   final public func setConnectivityEmptyBLETimeout(milliSeconds: Swift.Int)
   final public func startNavigation(pathEdges: [Penguin.Edge])
-  final public func setFloor(floorID: Swift.String)
+  @discardableResult
+  final public func setVenue(venueId: Swift.Int) -> Penguin.PILocationManager
+  final public func setFloor(floorId: Swift.Int)
   final public func setClientKeyID(key: Swift.String)
-  final public func setLanguage(lang: Swift.String)
+  final public func setLanguage(languageCode: Swift.String)
+  final public func enableOfflinePositioning(_ enabled: Swift.Bool)
 }
 public struct Translatable : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
@@ -1108,26 +1278,39 @@ public protocol PILocationManagerDelegate : AnyObject {
   func onSourceConnectivityStatusChange(status: Penguin.SourceConnectionStatus)
   func onGPSStatusChangeChange(status: Penguin.SourceGPSConnectionStatus)
   func onTrustedFloorChange(status: Swift.Bool)
-  func onTransision(status: Penguin.FloorTransitionType)
+  func onTransition(status: Penguin.FloorTransitionType)
   func onEpLocationChange(location: Penguin.PILocation)
   func onEpException(resetSDK: Swift.Bool, exMessage: Swift.String)
   func onBlePowerStatusChange(status: Penguin.BLEPowerStatus)
 }
-@objc public protocol PIInitializerDelegate {
-  @objc func onReady(warning: Penguin.WarningCode)
-  @objc func onInitilzationError(error: Penguin.ErrorCode)
-  @objc func onInitializationProgressChange(status: Penguin.SDKOperation)
+extension Penguin.PILocationManagerDelegate {
+  public func onVenueChange(venue: Penguin.Venue)
+  public func onTrustedFloorChange(status: Swift.Bool)
+  public func onEpLocationChange(location: Penguin.PILocation)
+  public func onEpException(resetSDK: Swift.Bool, exMessage: Swift.String)
+  public func onTransition(status: Penguin.FloorTransitionType)
 }
-@_inheritsConvenienceInitializers @objc(Gate_node) public class Gate_node : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public protocol PIInitializerDelegate : AnyObject {
+  func onReady(warning: Penguin.WarningCode)
+  func onInitializationError(error: Penguin.ErrorCode)
+  func onInitializationProgressChange(status: Penguin.SDKOperation)
+}
+@_inheritsConvenienceInitializers @objc(Gate_node) nonisolated public class Gate_node : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class PIAuthenticator {
   public static var shared: Penguin.PIAuthenticator
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getAuthenticationToken() -> Swift.String?
+  #endif
   public func cancelAuthenticationRequest()
   public func setAPIConfiguration(baseURL: Swift.String, serviceName: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func sendAuthenticationRequest(clientID: Swift.String, clientKey: Swift.String, completion: @escaping (Swift.String?, Penguin.ErrorCode?) -> Swift.Void)
+  #endif
   @objc deinit
 }
 public struct Route : Swift.Codable {
@@ -1136,13 +1319,20 @@ public struct Route : Swift.Codable {
   public var legs: [Penguin.RouteLeg]?
   public var errorCode: Swift.String?
   public var errorNumber: Swift.Int?
+  public var matchesPreferences: Swift.Bool {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(result: Swift.Bool?, message: Swift.String?, legs: [Penguin.RouteLeg]?)
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public enum RouteStatus : Swift.String {
   case reached
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -1154,33 +1344,55 @@ public struct RouteLeg : Swift.Codable {
   public var length: Swift.Double?
   public var travelTime: Swift.Double?
   public var isParkingPathIncluded: Swift.Bool?
+  public var isAvoidPathIncluded: Swift.Bool?
   public var shortestPath: Penguin.ShortestPath?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(sourceLocation: Penguin.SourceLocation?, destination: Penguin.Destination?, length: Swift.Double?, shortestPath: Penguin.ShortestPath?)
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@objc final public class Destination : ObjectiveC.NSObject, Swift.Codable {
+final public class Destination : Swift.Codable {
   final public var poi: Penguin.DestinationPOI?
   final public var venueID: Swift.Int?, floorID: Swift.Int?, x: Swift.Int?, y: Swift.Int?
   final public var longitude: Swift.Double?, latitude: Swift.Double?
   final public var nearLandmark: Penguin.NearPlace?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(poi: Penguin.DestinationPOI?, venueID: Swift.Int?, floorID: Swift.Int?, x: Swift.Int?, y: Swift.Int?, longitude: Swift.Double?, latitude: Swift.Double?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var centerCoordinate: _LocationEssentials.CLLocationCoordinate2D? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var centerPoint: CoreFoundation.CGPoint? {
+    get
+  }
+  #endif
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@objc final public class DestinationPOI : ObjectiveC.NSObject, Swift.Codable {
+final public class DestinationPOI : Swift.Codable {
   final public var id: Swift.Int?
   final public var name: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(id: Swift.Int?, name: Swift.String?)
+  #endif
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@_hasMissingDesignatedInitializers @objc final public class SourceLocation : ObjectiveC.NSObject, Swift.Codable {
+@_hasMissingDesignatedInitializers final public class SourceLocation : Swift.Codable {
   final public var venueID: Swift.Int?, floorID: Swift.Int?, edgeID: Swift.Int?, x: Swift.Int?
   final public var y: Swift.Int?
   final public var nearLandmark: Penguin.NearPlace?
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var centerPoint: CoreFoundation.CGPoint? {
+    get
+  }
+  #endif
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -1195,52 +1407,70 @@ public struct NearPlace : Swift.Codable {
 }
 public struct ShortestPath : Swift.Codable {
   public var count: Swift.Int?
-  public var subPaths: [Penguin.SubPath]?
-  public init(count: Swift.Int?, subPaths: [Penguin.SubPath]?)
+  public var subPaths: [Penguin.Subpath]?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(count: Swift.Int?, subPaths: [Penguin.Subpath]?)
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@objc public class SubPath : ObjectiveC.NSObject, Swift.Codable {
-  public var index: Swift.Int?, venueID: Swift.Int?, floorID: Swift.Int?, edgesCount: Swift.Int?
+public class Subpath : Swift.Codable {
+  public var id: Foundation.UUID
+  public var index: Swift.Int
+  public var venueId: Swift.Int?, floorId: Swift.Int?, edgesCount: Swift.Int?
   public var length: Swift.Double?
   public var duration: Swift.Double?
   public var firstNode: Penguin.SubPathNode?
   public var lastNode: Penguin.SubPathNode?
   public var edges: [Penguin.SubpathEdge]?
   public var isOnCampus: Swift.Bool
-  public var coordinates: [CoreLocation.CLLocationCoordinate2D]
+  public var coordinates: [_LocationEssentials.CLLocationCoordinate2D]
   public var segments: [Penguin.SubpathSegment] {
     get
   }
-  public init(index: Swift.Int? = nil, venueID: Swift.Int? = nil, floorID: Swift.Int? = nil, edgesCount: Swift.Int? = nil, length: Swift.Double? = nil, duration: Swift.Double? = nil, firstNode: Penguin.SubPathNode? = nil, lastNode: Penguin.SubPathNode? = nil, edges: [Penguin.SubpathEdge]? = nil, isOnCampus: Swift.Bool = true, coordinates: [CoreLocation.CLLocationCoordinate2D] = [])
-  public func copy() -> Penguin.SubPath
-  public func getIndex() -> Swift.Int
-  public func getCoordinates() -> [CoreLocation.CLLocationCoordinate2D]
-  public func toCLLocationCoordinate2D() -> CoreLocation.CLLocationCoordinate2D?
-  public func toCLLocation() -> CoreLocation.CLLocation?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(id: Foundation.UUID = UUID(), index: Swift.Int, venueID: Swift.Int? = nil, floorID: Swift.Int? = nil, edgesCount: Swift.Int? = nil, length: Swift.Double? = nil, duration: Swift.Double? = nil, firstNode: Penguin.SubPathNode? = nil, lastNode: Penguin.SubPathNode? = nil, edges: [Penguin.SubpathEdge]? = nil, isOnCampus: Swift.Bool = true, coordinates: [_LocationEssentials.CLLocationCoordinate2D] = [])
+  #endif
+  public func copy() -> Penguin.Subpath
+  public func getCoordinates() -> [_LocationEssentials.CLLocationCoordinate2D]
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func toCLLocationCoordinate2D() -> _LocationEssentials.CLLocationCoordinate2D?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func toCLLocation() -> _LocationEssentials.CLLocation?
+  #endif
   public func bearing(startLat: Swift.Double, startLng: Swift.Double, destLat: Swift.Double, destLng: Swift.Double) -> Swift.Double
   public func getOrientation() -> Swift.Double
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@objc public class SubpathEdge : ObjectiveC.NSObject, Swift.Codable {
+public class SubpathEdge : Swift.Codable {
   public var data: Penguin.SubpathEdgeData?
   public var firstNode: Penguin.Node?, secondNode: Penguin.Node?
   public var connectedtheta: Swift.Int?, connecteddirection: Swift.Int?
   public var mergedEdges: [Penguin.SubpathEdge]
   public var maneuverImage: UIKit.UIImage?
+  public var finalHeading: Swift.Double?
+  #if compiler(>=5.3) && $NonescapableTypes
   public var uncoveredEdge: Penguin.SubpathEdge? {
     get
   }
+  #endif
   public var isStraight: Swift.Bool {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public func matches(_ edge: Penguin.SubpathEdge?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func matches(_ edge: Penguin.Edge?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var mergedEdge: Penguin.SubpathEdge? {
     get
   }
+  #endif
   public var isTransition: Swift.Bool {
     get
   }
@@ -1275,17 +1505,25 @@ public struct ShortestPath : Swift.Codable {
   public var length: Swift.Double {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var mergedDirectionTypes: Swift.String? {
     get
   }
-  public init(data: Penguin.SubpathEdgeData? = nil, firstNode: Penguin.Node? = nil, secondNode: Penguin.Node? = nil, connectedtheta: Swift.Int? = nil, connecteddirection: Swift.Int? = nil, maneuverImage: UIKit.UIImage? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(data: Penguin.SubpathEdgeData? = nil, firstNode: Penguin.Node? = nil, secondNode: Penguin.Node? = nil, connectedtheta: Swift.Int? = nil, connecteddirection: Swift.Int? = nil, maneuverImage: UIKit.UIImage? = nil, finalHeading: Swift.Double? = nil)
+  #endif
   public func bearing(startLat: Swift.Double, startLng: Swift.Double, destLat: Swift.Double, destLng: Swift.Double) -> Swift.Double
-  public var orientation: Swift.Double {
+  public var heading: Swift.Double {
     get
   }
-  public func mergeEdge(_ edge: Penguin.SubpathEdge, mergesLengths: Swift.Bool = true)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func mergeEdge(_ edge: Penguin.SubpathEdge?, mergesLengths: Swift.Bool = true)
+  #endif
   public func mergeInclinedEdge(_ edge: Penguin.SubpathEdge)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func contains(edge: Penguin.Edge?) -> Swift.Bool
+  #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -1293,12 +1531,12 @@ public struct ShortestPath : Swift.Codable {
 public struct SubpathSegment {
   public var travelMode: Swift.String?
   public var edges: [Penguin.SubpathEdge]
-  public var coordinates: [CoreLocation.CLLocationCoordinate2D] {
+  public var coordinates: [_LocationEssentials.CLLocationCoordinate2D] {
     get
   }
 }
-@objc public class SubpathEdgeData : ObjectiveC.NSObject, Swift.Codable {
-  public var id: Swift.Int?, campusID: Swift.Int?, venueID: Swift.Int?, floorID: Swift.Int?
+public class SubpathEdgeData : Swift.Codable {
+  public var id: Swift.Int?, campusId: Swift.Int?, venueId: Swift.Int?, floorId: Swift.Int?
   public var type: Swift.String?
   public var transitionType: Swift.String?
   public var outdoor: Swift.Bool?
@@ -1307,46 +1545,68 @@ public struct SubpathSegment {
   public var directionType: Swift.String?
   public var lengthInPixels: Swift.Double?, lengthInMeters: Swift.Double?, floorScaleFactor: Swift.Double?
   public var transportationMode: Swift.String?
-  public var uncoverInstruction: [Swift.String : Swift.String]?
-  public init(id: Swift.Int? = nil, campusID: Swift.Int? = nil, venueID: Swift.Int? = nil, floorID: Swift.Int? = nil, typeEdge: Swift.String? = nil, outdoor: Swift.Bool? = nil, updateStatus: Swift.Int? = nil, directionInstruction: Swift.String? = nil, lengthInPixels: Swift.Double? = nil, lengthInMeters: Swift.Double? = nil, floorScaleFactor: Swift.Double? = nil, directionType: Swift.String? = nil, transitionType: Swift.String? = nil, transportationMode: Swift.String? = nil, uncoverInstruction: [Swift.String : Swift.String]? = nil)
+  public var uncoverInstruction: [Swift.String : Swift.String?]?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(id: Swift.Int? = nil, campusID: Swift.Int? = nil, venueID: Swift.Int? = nil, floorID: Swift.Int? = nil, typeEdge: Swift.String? = nil, outdoor: Swift.Bool? = nil, updateStatus: Swift.Int? = nil, directionInstruction: Swift.String? = nil, lengthInPixels: Swift.Double? = nil, lengthInMeters: Swift.Double? = nil, floorScaleFactor: Swift.Double? = nil, directionType: Swift.String? = nil, transitionType: Swift.String? = nil, transportationMode: Swift.String? = nil, uncoverInstruction: [Swift.String : Swift.String?]? = nil)
+  #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@objc public class Node : ObjectiveC.NSObject, Swift.Codable {
+public class Node : Swift.Codable {
   public var id: Swift.Int?
-  public var venueID: Swift.Int?, floorID: Swift.Int?, x: Swift.Int?
+  public var venueId: Swift.Int?, floorId: Swift.Int?, x: Swift.Int?
   public var y: Swift.Int?
   public var longitude: Swift.Double?, latitude: Swift.Double?
   public var typeNode: Swift.String?
   public var desc: [Penguin.TranslatableData]
-  public var centerCoordinate: CoreLocation.CLLocationCoordinate2D? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var centerCoordinate: _LocationEssentials.CLLocationCoordinate2D? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var centerPoint: CoreFoundation.CGPoint? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(venueID: Swift.Int?, floorID: Swift.Int?, typeNode: Swift.String?, x: Swift.Int?, y: Swift.Int?, longitude: Swift.Double?, latitude: Swift.Double?, desc: [Penguin.TranslatableData])
+  #endif
   public func getName() -> Swift.String
-  public func toCLLocationCoordinate2D() -> CoreLocation.CLLocationCoordinate2D?
-  public func toCLLocation() -> CoreLocation.CLLocation?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func toCLLocationCoordinate2D() -> _LocationEssentials.CLLocationCoordinate2D?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func toCLLocation() -> _LocationEssentials.CLLocation?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func toPoint() -> CoreFoundation.CGPoint?
+  #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@objc public class SubPathNode : ObjectiveC.NSObject, Swift.Codable {
+public class SubPathNode : Swift.Codable {
   public var x: Swift.Int?, y: Swift.Int?
   public var longitude: Swift.Double?, latitude: Swift.Double?
   public var type: Swift.String?
   public var desc: [Penguin.TranslatableData]
   public var isGate: Swift.Bool?
-  public var centerCoordinate: CoreLocation.CLLocationCoordinate2D? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var centerCoordinate: _LocationEssentials.CLLocationCoordinate2D? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(x: Swift.Int?, y: Swift.Int?, longitude: Swift.Double?, latitude: Swift.Double?, type: Swift.String?, desc: [Penguin.TranslatableData], isGate: Swift.Bool?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func isUpEscalator(venueId: Swift.Int?, floorId: Swift.Int?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func isDownEscalator(venueId: Swift.Int?, floorId: Swift.Int?) -> Swift.Bool
+  #endif
   public func getName() -> Swift.String
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -1367,47 +1627,65 @@ public enum RouteError {
 }
 extension Penguin.CategoryTable {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Penguin.CategoryTable>
-  @objc @NSManaged dynamic public var categoryIconUrl: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var categoryIconUrl: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var color: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var color: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var framedIconUrl: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var framedIconUrl: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var id: Swift.Int16 {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var id: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var name: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var name: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var poiCount: Swift.Int16 {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var poiCount: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var categoryDesc: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var categoryDesc: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
 }
-@_inheritsConvenienceInitializers @objc(Edges_Table) public class Edges_Table : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+@_inheritsConvenienceInitializers @objc(Edges_Table) nonisolated public class Edges_Table : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
 public protocol CoreDataProtocol : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   func getAll(filter: [Foundation.NSPredicate]?) -> Any?
+  #endif
   func insert(data: Any)
+  #if compiler(>=5.3) && $NonescapableTypes
   func delete(filter: [Foundation.NSPredicate]?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func update(data: Any, filter: [Foundation.NSPredicate]?)
+  #endif
   func clear()
 }
-@_inheritsConvenienceInitializers @objc public class PILocation : ObjectiveC.NSObject {
+@_hasMissingDesignatedInitializers public class PILocation {
   public var venue: Penguin.Venue?
   public var floor: Penguin.Floor?
   public var edge: Penguin.Edge?
@@ -1422,7 +1700,12 @@ public protocol CoreDataProtocol : AnyObject {
   public var isRecalculateTrigger: Swift.Bool
   public var recalculateSourcePoint: Penguin.PIPoint?
   public var recalculateSourceEdge: Penguin.Edge?
+  #if compiler(>=5.3) && $NonescapableTypes
   public var address: Swift.String? {
+    get
+  }
+  #endif
+  public var accuracyRadius: Swift.Double {
     get
   }
   public var onCampusOutdoor: Swift.Bool {
@@ -1432,33 +1715,36 @@ public protocol CoreDataProtocol : AnyObject {
     get
     set
   }
-  public var nextRouteData: Penguin.NextRoutPathData? {
-    get
-    set
-  }
-  public var coordinates: CoreLocation.CLLocationCoordinate2D {
+  public var coordinates: _LocationEssentials.CLLocationCoordinate2D {
     get
   }
-  public var matchingCoordinates: CoreLocation.CLLocationCoordinate2D {
+  public var matchingCoordinates: _LocationEssentials.CLLocationCoordinate2D {
     get
   }
-  public var centerCoordinate: CoreLocation.CLLocationCoordinate2D? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var centerCoordinate: _LocationEssentials.CLLocationCoordinate2D? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(venue: Penguin.Venue, floor: Penguin.Floor, edge: Penguin.Edge, epPosition: Penguin.PIPoint? = nil, position: Penguin.PIPoint? = nil, accuracy: Swift.Double = 0.0, gps: Penguin.PICLocation?, offCampus: Swift.Bool, outMapMatching: Swift.Bool?, source: Penguin.SourceType = SourceType.NONE, isOutOfNavigationPath: Swift.Bool = false, isRecalculateTrigger: Swift.Bool = false, recalculateSourcePoint: Penguin.PIPoint? = nil, recalculateSourceEdge: Penguin.Edge? = nil)
-  @objc override dynamic public init()
+  #endif
   @objc deinit
 }
-@objc public class PIPoint : ObjectiveC.NSObject {
+public class PIPoint {
   public var point: CoreFoundation.CGPoint
   public var coordinate: Penguin.PICLocation?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(point: CoreFoundation.CGPoint, coordinate: Penguin.PICLocation?)
-  public var centerCoordinate: CoreLocation.CLLocationCoordinate2D? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var centerCoordinate: _LocationEssentials.CLLocationCoordinate2D? {
     get
   }
+  #endif
   @objc deinit
 }
-@objc public class PICLocation : ObjectiveC.NSObject, Swift.Codable {
+public class PICLocation : Swift.Codable {
   public var latitude: Swift.Double
   public var longitude: Swift.Double
   public init(latitude: Swift.Double, longitude: Swift.Double)
@@ -1466,14 +1752,32 @@ public protocol CoreDataProtocol : AnyObject {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@_hasMissingDesignatedInitializers @objc public class PIRotation : ObjectiveC.NSObject {
+@_hasMissingDesignatedInitializers public class PIRotation {
   public var sensorValue: Swift.Double
   public var mapRotationValue: Swift.Double
   public var heading: CoreLocation.CLHeading
   @objc deinit
 }
+public protocol PILocationManagerProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
+  var lastKnownLocation: Penguin.PILocation? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  var lastValidLocation: Penguin.PILocation? { get }
+  #endif
+  var isUserOutdoorWithIndoorDeployment: Swift.Bool { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  func getLastKnownLocation() -> Penguin.PILocation?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func getLastKnownValidLocation() -> Penguin.PILocation?
+  #endif
+  func isUserOffCampus() -> Swift.Bool
+}
 extension Penguin.PILocationManager {
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func getCurrentSubpath() -> Penguin.NavigationSubPath?
+  #endif
   final public func getAllNavigationPath() -> [Penguin.NavigationSubPath]
   final public func getSessionID() -> Swift.String
   final public func getFloorTransitionType() -> Penguin.FloorTransitionType
@@ -1493,77 +1797,97 @@ extension Penguin.PILocationManager {
   final public func checkTrustedFloor() -> Swift.Bool
   final public func isReady() -> Swift.Bool
   final public func isLocationPermissionAuthorized() -> Swift.Bool
-  final public func requestLocationPermsssion()
+  final public func requestLocationPermission()
   final public func getEP() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func getLastKnownLocation() -> Penguin.PILocation?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func getHeading() -> CoreLocation.CLHeading?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func getLastKnownValidLocation() -> Penguin.PILocation?
+  #endif
   final public func isUserOffCampus() -> Swift.Bool
-  final public var isOffCampusNavigationDisabled: Swift.Bool {
-    get
-  }
   final public var isUserOutdoorWithIndoorDeployment: Swift.Bool {
     get
   }
 }
 extension Penguin.PICLocation {
-  public func toCLLocationCoordinate2D() -> CoreLocation.CLLocationCoordinate2D
-  public func toCLLocation() -> CoreLocation.CLLocation
+  public func toCLLocationCoordinate2D() -> _LocationEssentials.CLLocationCoordinate2D
+  public func toCLLocation() -> _LocationEssentials.CLLocation
 }
-extension CoreLocation.CLLocationCoordinate2D {
-  public func isEqual(_ coord: CoreLocation.CLLocationCoordinate2D) -> Swift.Bool
-  public func equals(_ coordinate: CoreLocation.CLLocationCoordinate2D?) -> Swift.Bool
-  public func toCLLocation() -> CoreLocation.CLLocation
-  public func distance(from: CoreLocation.CLLocationCoordinate2D) -> CoreLocation.CLLocationDistance
+extension _LocationEssentials.CLLocationCoordinate2D {
+  public func isEqual(_ coord: _LocationEssentials.CLLocationCoordinate2D) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func equals(_ coordinate: _LocationEssentials.CLLocationCoordinate2D?) -> Swift.Bool
+  #endif
+  public func toCLLocation() -> _LocationEssentials.CLLocation
+  public func distance(from: _LocationEssentials.CLLocationCoordinate2D) -> _LocationEssentials.CLLocationDistance
   public func isCoordinateValid() -> Swift.Bool
 }
-@_inheritsConvenienceInitializers @objc(Floors_Table) public class Floors_Table : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+@_inheritsConvenienceInitializers @objc(Floors_Table) nonisolated public class Floors_Table : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
-@objc final public class Instruction : ObjectiveC.NSObject {
-  final public var directionID: Swift.Int
+final public class Instruction {
+  final public var directionId: Swift.Int
   final public var directionText: Swift.String
   final public var directionImage: UIKit.UIImage?
-  final public var directionPoI: Penguin.POI?
+  final public var directionPoi: Penguin.POI?
   final public var directionEdgeOrder: Swift.Int?
   public init(directionString: Swift.String)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc final public class DirectionInstruction : ObjectiveC.NSObject {
-  final public var edgeID: Swift.Int?
-  final public var campusID: Swift.Int?
-  final public var venueID: Swift.Int?
-  final public var floorID: Swift.Int?
+@_hasMissingDesignatedInitializers final public class DirectionInstruction {
+  final public var edgeId: Swift.Int?
+  final public var campusId: Swift.Int?
+  final public var venueId: Swift.Int?
+  final public var floorId: Swift.Int?
   final public var directionInstruction: Swift.String?
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers public class PoIPolygonsTable : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+@objc @_inheritsConvenienceInitializers nonisolated public class PoIPolygonsTable : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc final public class PIDBManager : ObjectiveC.NSObject {
+@_hasMissingDesignatedInitializers final public class PIDBManager {
   public static var shared: Penguin.PIDBManager
   final public func resetCache()
   final public func getVenues() -> [Penguin.Venue]
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func getVenueByID(filterBy venueID: Swift.Int?) -> Penguin.Venue
+  #endif
   final public func getFloorByID(filterBy id: Swift.Int) -> Penguin.Floor
-  final public func getFloorsByVenueID(filterBy venueID: Swift.Int) -> [Penguin.Floor]
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func getCampusFloor() -> Penguin.Floor?
-  final public func getCampusFloorSetting() -> Penguin.FloorSettings?
+  #endif
   final public func getFloors() -> [Penguin.Floor]
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func getFloorsSetting(filterBy id: Swift.Int) -> Penguin.FloorSettings?
-  final public func getEdgeByID(filterBy id: Swift.Int) -> Penguin.Edge
-  final public func getEdgesByVenueID(filterBy venueID: Swift.Int) -> [Penguin.Edge]
-  final public func getEdgesByFloorID(filterBy floorID: Swift.Int) -> [Penguin.Edge]
+  #endif
+  final public func getEdgeById(_ id: Swift.Int) -> Penguin.Edge
   final public func getEdges() -> [Penguin.Edge]
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func getGateNode(filterBy filter: [Swift.String : Any]) -> [Penguin.GateNodeModel]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func getEdgesGateNodeDataGnode() -> [Swift.Int : [Penguin.Gnode]]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func getPOIPolygons() -> [Penguin.PoiPolygon]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func getCategories() -> [Penguin.POICategory]?
-  final public func clearAll()
+  #endif
   final public func getAllGeofenceRegions() -> [Penguin.GeofenceRegion]
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func getGeofenceById(_ id: Swift.Int) -> Penguin.GeofenceRegion?
-  @objc override dynamic public init()
+  #endif
   @objc deinit
 }
 public class Campus : Swift.Codable {
@@ -1573,12 +1897,16 @@ public class Campus : Swift.Codable {
   final public let imageURL: Swift.String?
   final public let id: Swift.Int?
   final public let coverImageURL: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   public var localizedName: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var localizedAddress: Swift.String? {
     get
   }
+  #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -1599,7 +1927,9 @@ public enum UpdateStatus : Swift.Int {
   case Deleted
   case Updated
   public static func getUpdateStatus(from value: Swift.Int) -> Penguin.UpdateStatus
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1631,8 +1961,11 @@ public enum UpdateStatus : Swift.Int {
   case SelectedPOI = 23
   case LoadingErrorPathFailed = 24
   case ErrorInRemoteConfig = 25
+  case OfflinePEError = 26
   public static func getErrorMessage(errorCodeValue: Swift.Int) -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1646,7 +1979,9 @@ public enum UpdateStatus : Swift.Int {
   case GyroSensorNotAvailable = 4
   case OrientationSensorNotAvailable = 5
   case BarometerSensorNotAvailable = 6
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1656,7 +1991,9 @@ public enum UpdateStatus : Swift.Int {
   case Background = 1
   case FreeStyle = 2
   case Navigation = 3
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1672,7 +2009,9 @@ public enum HTTPMethod : Swift.String {
   case delete
   case trace
   case connect
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -1685,7 +2024,9 @@ public enum EdgeTypeNew : Swift.String {
   case stairs
   case ramp
   case gate
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -1700,7 +2041,9 @@ public enum NodeType : Swift.String {
   case gate
   case campus
   case none
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -1710,7 +2053,9 @@ public enum TransitionEdgeType : Swift.String, Swift.Codable {
   case floor
   case same
   case venue
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -1722,7 +2067,9 @@ public enum TransitionEdgeType : Swift.String, Swift.Codable {
   case Medium = 3
   case Excellent = 4
   case EmptyBLEScans = 5
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1734,7 +2081,9 @@ public enum TransitionEdgeType : Swift.String, Swift.Codable {
   case BleDisconnected = 2
   case Initializing = 3
   case GpsNotResponding = 4
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1743,7 +2092,9 @@ public enum TransitionEdgeType : Swift.String, Swift.Codable {
 @objc public enum SourceGPSConnectionStatus : Swift.Int {
   case GpsConnected = 0
   case GpsNotResponding = 1
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1752,7 +2103,9 @@ public enum TransitionEdgeType : Swift.String, Swift.Codable {
 @objc public enum BLEPowerStatus : Swift.Int {
   case blePowerOff = 0
   case blePowerOn = 1
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1766,7 +2119,9 @@ public enum TransitionEdgeType : Swift.String, Swift.Codable {
   case elevatorDown = 4
   case up = 5
   case down = 6
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1779,7 +2134,9 @@ public enum TransitionEdgeType : Swift.String, Swift.Codable {
   case ReadyForPositionUpdate = 3
   case GetPosition = 4
   case NewVenueDataLoading = 5
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1797,112 +2154,115 @@ public enum MapLevel {
 @_hasMissingDesignatedInitializers public class PIRemoteSettingsManager {
   public static var shared: Penguin.PIRemoteSettingsManager
   public func cancelTask()
+  #if compiler(>=5.3) && $NonescapableTypes
   public func loadRemoteSettingsForGeofence(completion: @escaping (Penguin.ErrorCode?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func loadRemoteConfigurationsForSDK(completion: @escaping (Penguin.ErrorCode?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func outdoorPositionEnabled() -> Swift.Bool?
+  #endif
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(Localize) public class Localize : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class DetectFloorsByClosestGate {
-  public static var shared: Penguin.DetectFloorsByClosestGate
-  public var allGate: [Penguin.GateNodeModel]? {
-    get
-    set
-  }
-  public func detectOutdoorFloorData(floorID: Swift.Int) -> Penguin.Floor?
-  public func detectIndoorFloorGates(floorIds: [Swift.Int]) -> [Penguin.GateNodeModel]?
-  public func detectOutdoorFloorGates(floorID: Swift.Int) -> [Penguin.GateNodeModel]?
-  public func detectFloorGates(floorID: Swift.Int) -> [Penguin.GateNodeModel]?
-  public func detectFloorEscElevNodes(floorIds: [Swift.Int]) -> [Penguin.Gnode]?
-  public func getConnectedFloors(floor: Penguin.Floor?) -> [Penguin.Floor]
+@_inheritsConvenienceInitializers @objc(Localize) nonisolated public class Localize : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
 extension Penguin.VenueTable {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Penguin.VenueTable>
-  @objc @NSManaged dynamic public var id: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var id: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var name: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var name: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var arabic_name: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var arabic_name: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var is_wifi: Swift.Int16 {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var is_wifi: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var is_ble: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var is_ble: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var is_mix: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var is_mix: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var campusId: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var campusId: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var points: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var points: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var centerPoint: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var centerPoint: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var is_default: Swift.Bool {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var is_default: Swift.Bool {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var isUnderground: Swift.Bool {
+  @objc @NSManaged nonisolated dynamic public var isUnderground: Swift.Bool {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var extrusionHeight: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var extrusionHeight: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var threeDUri: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var threeDUri: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var threeDCenterLat: Swift.Double {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var threeDCenterLat: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var threeDCenterLng: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var threeDCenterLng: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var connectedVenues: [Swift.Int] {
+  @objc @NSManaged nonisolated dynamic public var connectedVenues: [Swift.Int] {
     @objc get
     @objc set
   }
 }
-@_inheritsConvenienceInitializers @objc final public class PIDirectionsService : ObjectiveC.NSObject {
+@_hasMissingDesignatedInitializers final public class PIDirectionsService {
   public static var shared: Penguin.PIDirectionsService
   final public var delegate: (any Penguin.PIDirectionsServiceDelegate)?
   final public func startNavigation()
   final public func continueNavigation(skipping matchedStops: Swift.Int)
   final public func stopNavigation()
-  final public func recalculteRoutingPath()
+  final public func cancelRouteRequests()
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func getNavigationRoute(parameters: [Swift.String : Any]?, completion: @escaping (Penguin.Route?, Penguin.RouteError?) -> Swift.Void)
-  final public func getShortestDistanceFromCampusGate(parameters: [Swift.String : Any], completion: @escaping ([Penguin.ShortestPathDistance]?, Penguin.RouteError?) -> Swift.Void)
-  final public func getIndexCurrentFloorPath() -> Swift.Int?
-  final public func getCurrentSubpathIndex() -> Swift.Int
-  final public func getCurrentLegIndex() -> Swift.Int
-  final public func setCurrentIndexSubPath(index: Swift.Int)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func getCampusEntrances(parameters: [Swift.String : Any], completion: @escaping ([Penguin.CampusEntrance]?, Penguin.RouteError?) -> Swift.Void)
+  #endif
+  final public func getVenueGateDistances(parameters: [Swift.String : Any], completion: @escaping ([Penguin.VenueGate]) -> Swift.Void)
   final public func getCurrentSubPath()
-  final public func getBearingAngle() -> CoreFoundation.CGFloat
-  @objc override dynamic public init()
   @objc deinit
 }
 public enum GateType {
@@ -1914,13 +2274,35 @@ public enum GateType {
     get
   }
 }
-@_inheritsConvenienceInitializers @objc final public class PILocationManager : ObjectiveC.NSObject {
+extension Penguin.PILocationManager {
+  final public func notifyError(error: Penguin.ErrorCode)
+  final public func notifyProgress(progress: Penguin.SDKOperation)
+  final public func notifyLocationChange(location: Penguin.PILocation)
+  final public func notifyEPChange(location: Penguin.PILocation)
+  final public func notifyRotationChange(rotation: Penguin.PIRotation)
+  final public func notifyVenueChange(venue: Penguin.Venue)
+  final public func notifyFloorChange(floor: Penguin.Floor)
+  final public func notifyEdgeChange(edge: Penguin.Edge)
+  final public func notifyConnectivityChange(status: Penguin.ServerConnectivityStatus)
+  final public func notifyDataAPIConnectivityChange(status: Penguin.ServerConnectivityStatus)
+  final public func notifyPositionAPIConnectivtyChange(status: Penguin.ServerConnectivityStatus)
+  final public func notifySourceConnectivtyChange(status: Penguin.SourceConnectionStatus)
+  final public func notifyGPSConnectivtyChange(status: Penguin.SourceGPSConnectionStatus)
+  final public func detectFloorChange(location: Penguin.PILocation)
+  final public func detectVenueChange(location: Penguin.PILocation)
+  final public func detectEdgeChange(location: Penguin.PILocation)
+  final public func detectSourceConnectionChange(status: Penguin.SourceConnectionStatus)
+  final public func detectBlePowerStatusChanged(status: Penguin.BLEPowerStatus)
+  final public func detectGPSConnectionChange(status: Penguin.SourceGPSConnectionStatus)
+  final public func detectConnectivityChange(status: Penguin.ServerConnectivityStatus)
+  final public func detectAPIConnectivityChange(status: Penguin.ServerConnectivityStatus)
+}
+@_inheritsConvenienceInitializers @objc final public class PILocationManager : ObjectiveC.NSObject, Penguin.PILocationManagerProtocol {
   public static var shared: Penguin.PILocationManager
   weak final public var delegate: (any Penguin.PILocationManagerDelegate)?
   weak final public var initDelegate: (any Penguin.PIInitializerDelegate)?
   final public var lastKnownLocation: Penguin.PILocation?
   final public var lastValidLocation: Penguin.PILocation?
-  final public var selectedLanguage: Penguin.LangNames
   public static func getVersion() -> Swift.String
   final public func startUpdateLocation()
   final public func build()
@@ -1929,43 +2311,53 @@ public enum GateType {
   @objc override dynamic public init()
   @objc deinit
 }
+#if compiler(>=5.3) && $NonescapableTypes
 extension Swift.Optional {
   public func apply(do: (Wrapped) -> ())
 }
+#endif
 extension Penguin.Geofence_Table {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Penguin.Geofence_Table>
-  @objc @NSManaged dynamic public var id: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var id: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var longitude: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var longitude: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var latitude: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var latitude: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var radius: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var radius: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var title: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var title: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var geofenceDescription: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var geofenceDescription: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var endDate: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var endDate: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var validity: Foundation.Date? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var validity: Foundation.Date? {
     @objc get
     @objc set
   }
+  #endif
 }
 @_hasMissingDesignatedInitializers public class Reachability {
   @objc deinit
@@ -1978,26 +2370,74 @@ public struct GeofenceRegion : Swift.Codable {
   public var localizedTitle: Swift.String?
   public var localizedDescription: Swift.String?
   public var validity: Foundation.Date?
-  public var coordinate: CoreLocation.CLLocationCoordinate2D? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var coordinate: _LocationEssentials.CLLocationCoordinate2D? {
     get
   }
+  #endif
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
 }
-@_hasMissingDesignatedInitializers final public class SubPathManager {
-  public static var subPaths: [Penguin.SubPath]?
-  final public class func setRoutPath(paths: [Penguin.SubPath])
-  final public class func getCurrentSubPath() -> Penguin.SubPath?
-  final public class func getNextWalkPath() -> Penguin.SubPath?
-  final public class func getIndexOfSubPath(subPath: Penguin.SubPath?) -> Swift.Int?
-  final public class func isNextLastPath() -> Swift.Bool
-  final public class func isCurrentPathLastFloor() -> Swift.Bool
-  final public class func getCurrentLastNodeCoordinate() -> CoreLocation.CLLocationCoordinate2D?
-  final public class func getNextVenueID() -> Swift.Int?
-  final public class func getNextFloorID() -> Swift.Int?
-  final public class func getNextFloor() -> Penguin.Floor?
-  final public class func getNextVenue() -> Penguin.Venue?
-  final public class func extractCoordinates(floorPath: Penguin.SubPath) -> [CoreLocation.CLLocationCoordinate2D]
+@_hasMissingDesignatedInitializers public class NewSigDataReader {
+  @objc deinit
+}
+public struct DebugPositioningInfo {
+  public let venueID: Swift.Int
+  public let floorID: Swift.Int
+  public let x: Swift.Int
+  public let y: Swift.Int
+  public let radius: Swift.Int
+  public let epTrust: Swift.Double
+  public let timestamp: Swift.Int64
+  public let stepsCount: Swift.Int
+  public let reqID: Swift.Int
+  public let duration: Swift.Int64
+  public let errorMessage: Swift.String?
+  public let isSuccess: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(venueID: Swift.Int = 0, floorID: Swift.Int = 0, x: Swift.Int = 0, y: Swift.Int = 0, radius: Swift.Int = 0, epTrust: Swift.Double = 0.0, timestamp: Swift.Int64 = 0, stepsCount: Swift.Int = 0, reqID: Swift.Int = 0, duration: Swift.Int64 = 0, errorMessage: Swift.String? = nil, isSuccess: Swift.Bool = false)
+  #endif
+}
+public class PenguinLocationOfflineHelper {
+  public static var copyBundledDatabaseOnInit: Swift.Bool
+  public static var latestDebugInfo: Penguin.DebugPositioningInfo? {
+    get
+  }
+  public enum OfflinePEInitializationResult {
+    case success
+    case failure(reason: Swift.String)
+  }
+  public init()
+  public func initializeSDK(completion: @escaping (Penguin.PenguinLocationOfflineHelper.OfflinePEInitializationResult) -> Swift.Void) async
+  @objc deinit
+}
+public class PositioningRequestModel {
+  final public let Data: Swift.String
+  final public let UserID: Swift.String
+  public var FixFloorID: Swift.Int
+  public var FixVenueID: Swift.Int
+  final public let Orientation: Swift.String
+  final public let BarometerReading: Swift.Float
+  final public let SessionID: Swift.String
+  final public let ReqID: Swift.Int
+  final public let StepsCount: Swift.Int
+  final public let Heading: Swift.Float
+  final public let OrientationStatus: Swift.Int
+  final public let AccelerometerStatus: Swift.Int
+  final public let isWiFi: Swift.Bool
+  final public let ResetParticles: Swift.Bool
+  final public let DeviceID: Swift.String
+  final public let TriggerVenueDetection: Swift.Bool
+  final public let orientationVector: Swift.String
+  public init(Data: Swift.String, UserID: Swift.String, FixFloorID: Swift.Int, FixVenueID: Swift.Int, Orientation: Swift.String, BarometerReading: Swift.Float, SessionID: Swift.String, ReqID: Swift.Int, StepsCount: Swift.Int, Heading: Swift.Float, OrientationStatus: Swift.Int, AccelerometerStatus: Swift.Int, isWiFi: Swift.Bool, ResetParticles: Swift.Bool, DeviceID: Swift.String, TriggerVenueDetection: Swift.Bool, orientationVector: Swift.String)
+  @objc deinit
+}
+public struct FloorMockData : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class SigDataReader {
+  public static func listVenuesAndFloors() async -> [Swift.String : [Penguin.FloorMockData]]
   @objc deinit
 }
 public struct AlignmentParameters : Swift.Codable {
@@ -2007,21 +2447,22 @@ public struct AlignmentParameters : Swift.Codable {
 }
 extension Penguin.Last_update_Table {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Penguin.Last_update_Table>
-  @objc @NSManaged dynamic public var tableName: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var tableName: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var lastUpdateTime: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var lastUpdateTime: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension Penguin.HttpMethod : Swift.Equatable {}
 extension Penguin.HttpMethod : Swift.Hashable {}
 extension Penguin.HttpMethod : Swift.RawRepresentable {}
-extension Penguin.LangNames : Swift.Equatable {}
-extension Penguin.LangNames : Swift.Hashable {}
-extension Penguin.LangNames : Swift.RawRepresentable {}
 extension Penguin.CampusError : Swift.Equatable {}
 extension Penguin.CampusError : Swift.Hashable {}
 extension Penguin.CampusError : Swift.RawRepresentable {}

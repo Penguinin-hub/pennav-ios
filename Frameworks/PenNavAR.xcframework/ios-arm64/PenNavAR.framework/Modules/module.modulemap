@@ -1,6 +1,0 @@
-framework module PenNavAR {
-  umbrella header "PenNavAR.h"
-  export *
-
-  module * { export * }
-}

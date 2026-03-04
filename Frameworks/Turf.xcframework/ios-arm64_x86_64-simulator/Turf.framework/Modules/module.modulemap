@@ -1,4 +1,11 @@
 framework module Turf {
-    header "Turf-Swift.h"
-    export *
+  umbrella header "Turf.h"
+  export *
+
+  module * { export * }
+}
+
+module Turf.Swift {
+  header "Turf-Swift.h"
+  requires objc
 }

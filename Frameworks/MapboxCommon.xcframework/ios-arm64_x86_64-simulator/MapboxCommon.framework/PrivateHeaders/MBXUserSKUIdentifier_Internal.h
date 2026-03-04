@@ -10,7 +10,9 @@ typedef NS_ENUM(NSInteger, MBXUserSKUIdentifier)
     MBXUserSKUIdentifierVisionFleetMAUS,
     MBXUserSKUIdentifierNav2SesMAU,
     MBXUserSKUIdentifierNav3UxMAU,
-    MBXUserSKUIdentifierNav3CoreMAU
+    MBXUserSKUIdentifierNav3CoreMAU,
+    MBXUserSKUIdentifierGeofencingMAU,
+    MBXUserSKUIdentifierUnityMAUS
 } NS_SWIFT_NAME(UserSKUIdentifier);
 
 NSString* MBXUserSKUIdentifierToString(MBXUserSKUIdentifier user_skuidentifier);

@@ -1,11 +1,12 @@
 // This file is generated and will be overwritten automatically.
 
-#import "MBMScreenCoordinate_Internal.h"
 #import "MBMScreenBox_Internal.h"
-#import "MBMLayerPosition_Internal.h"
+#import "MBMFeaturesetQueryTarget_Internal.h"
 #import "MBMAnnotatedLayerFeature_Internal.h"
 #import "MBMViewAnnotationOptions_Internal.h"
 #import "MBMTileCoverOptions_Internal.h"
+#import "MBMCameraAnimationHintStage_Internal.h"
+#import "MBMCameraAnimationHint_Internal.h"
 #import "MBMMap_Internal.h"
 #import "MBMMapClient_Internal.h"
 #import "MBMQueryRenderedFeaturesCallback_Internal.h"
@@ -15,3 +16,6 @@
 #import "MBMFeatureStateOperationCallback_Internal.h"
 #import "MBMRenderedQueryGeometry_Internal.h"
 #import "MBMAnnotatedFeature_Internal.h"
+#import "MBMQueriedFeature_Internal.h"
+#import "MBMQueriedRenderedFeature_Internal.h"
+#import "MBMQueriedSourceFeature_Internal.h"

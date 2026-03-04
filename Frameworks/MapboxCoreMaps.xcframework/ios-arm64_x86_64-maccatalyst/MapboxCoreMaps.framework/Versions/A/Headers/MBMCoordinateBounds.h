@@ -4,6 +4,7 @@
 #import <CoreLocation/CoreLocation.h>
 
 /** A rectangular area as measured on a two-dimensional map projection. */
+NS_SWIFT_SENDABLE
 NS_SWIFT_NAME(CoordinateBounds)
 __attribute__((visibility ("default")))
 @interface MBMCoordinateBounds : NSObject
@@ -196,13 +197,15 @@ __attribute__((visibility ("default")))
 
 /**
  * Coordinate at the southwest corner.
- * Note: setting this field with invalid values (infinite, NaN) will crash the application.
+ * Note: setting this field with invalid values (infinite, NaN, latitude outside [-90, 90]) will result in thrown exceptions.
+ * Guard against invalid usage with `CoordinateBounds::isValid()`.
  */
 @property (nonatomic, readonly) CLLocationCoordinate2D southwest;
 
 /**
  * Coordinate at the northeast corner.
- * Note: setting this field with invalid values (infinite, NaN) will crash the application.
+ * Note: setting this field with invalid values (infinite, NaN, latitude outside [-90, 90]) will result in thrown exceptions.
+ * Guard against invalid usage with `CoordinateBounds::isValid()`.
  */
 @property (nonatomic, readonly) CLLocationCoordinate2D northeast;
 

@@ -1,9 +1,9 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCoreMaps/MBMMapLoadingErrorType.h>
 
 @class MBMCanonicalTileID;
+typedef NS_ENUM(NSInteger, MBMMapLoadingErrorType);
 
 /**
  * Describes an error that has occurred while loading the `map`. The `type` property
@@ -11,7 +11,8 @@
  * a descriptive error message.
  *
  * - In case of `MapLoadingErrorType.Source` or `MapLoadingErrorType.Tile` loading errors,
- * the `sourceId` property will contain the source's name.
+ * the `sourceId` property will contain the source's name. For the GeoJSON data loading and parsing errors,
+ * `message` will contain the following JSON string: {"dataId": "dataId", "message": "errorMessage" }
  * - In case of `MapLoadingErrorType.Tile` loading errors, `tileId` will contain the `CanonicalTileID` of the tile.
  */
 NS_SWIFT_NAME(MapLoadingError)

@@ -5,6 +5,10 @@
 @class MBMAnnotatedFeature;
 @class MBMViewAnnotationAnchorConfig;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Defines the necessary options for displaying view annotations.
+ */
 NS_SWIFT_NAME(ViewAnnotationOptions)
 __attribute__((visibility ("default")))
 @interface MBMViewAnnotationOptions : NSObject
@@ -24,9 +28,19 @@ __attribute__((visibility ("default")))
                                          visible:(nullable NSNumber *)visible
                                  variableAnchors:(nullable NSArray<MBMViewAnnotationAnchorConfig *> *)variableAnchors
                                         selected:(nullable NSNumber *)selected
-                             ignoreCameraPadding:(nullable NSNumber *)ignoreCameraPadding NS_REFINED_FOR_SWIFT;
+                                        priority:(nullable NSNumber *)priority
+                             ignoreCameraPadding:(nullable NSNumber *)ignoreCameraPadding
+                                         minZoom:(nullable NSNumber *)minZoom
+                                         maxZoom:(nullable NSNumber *)maxZoom NS_REFINED_FOR_SWIFT;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Associates a view annotation with the geometry provided by the `AnnotatedFeature`.
+ * Note: When adding a new view annotation, you must specify the `AnnotatedFeature` type. Failure to do so will result in an error.
+ * When updating existing annotations,if the `annotatedFeature` is not set, the current value will be retained.
+ */
 @property (nonatomic, readonly, nullable) MBMAnnotatedFeature *annotatedFeature;
+
 /** View annotation width in `platform pixels`. */
 @property (nonatomic, readonly, nullable) NSNumber *width NS_REFINED_FOR_SWIFT;
 
@@ -88,7 +102,21 @@ __attribute__((visibility ("default")))
  * When adding new annotations, if `selected` is not explicitly set, default value `false` will be applied.
  * When updating existing annotations, if `selected` is not explicitly set, the current value will be retained.
  */
-@property (nonatomic, readonly, nullable) NSNumber *selected NS_REFINED_FOR_SWIFT;
+@property (nonatomic, readonly, nullable) NSNumber *selected NS_REFINED_FOR_SWIFT __attribute__((deprecated));
+
+/**
+ * Sorts annotations in descending order based on this value.
+ *
+ * A replacement for the deprecated `selected` field.
+ * Simultaneous use of `priority` and `selected` fileds should be avoided.
+ * Annotations with higher priority keys are drawn and placed first.
+ * When equal priorities, less-anchor-options and least-recently-added sequentially used for annotations placement order.
+ * `priority` field defaults to 0 when not set explicitly.
+ * Negative, 0, positive values could be used in `priority` field.
+ *
+ * When updating existing annotations, if `priority` is not explicitly set, the current value will be retained.
+ */
+@property (nonatomic, readonly, nullable) NSNumber *priority NS_REFINED_FOR_SWIFT;
 
 /**
  * If true, the annotation will be visible even if it is outside the bound that defined by the camera padding.
@@ -97,6 +125,19 @@ __attribute__((visibility ("default")))
  * When updating existing annotations, if `ignoreCameraPadding` is not explicitly set, the current value will be retained.
  */
 @property (nonatomic, readonly, nullable) NSNumber *ignoreCameraPadding NS_REFINED_FOR_SWIFT;
+
+/**
+ * minimum zoom value in Mapbox zoom levels [0.0-25.5] to display View Annotation.
+ * if not provided or is out of range, defaults to 0.0.
+ */
+@property (nonatomic, readonly, nullable) NSNumber *minZoom NS_REFINED_FOR_SWIFT;
+
+/**
+ * maximum zoom value in Mapbox zoom levels [0.0, 25.5] to display View Annotation.
+ * should be greater than or equal to minZoom.
+ * if not provided or is out of range, defaults to 25.5.
+ */
+@property (nonatomic, readonly, nullable) NSNumber *maxZoom NS_REFINED_FOR_SWIFT;
 
 
 @end

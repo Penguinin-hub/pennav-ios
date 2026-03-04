@@ -1,0 +1,8 @@
+framework module "pelogic" {
+    umbrella header "pelogic.h"
+
+    export *
+    module * { export * }
+
+    use Foundation
+}

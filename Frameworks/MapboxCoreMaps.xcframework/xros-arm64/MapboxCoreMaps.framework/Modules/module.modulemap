@@ -4,3 +4,7 @@ framework module MapboxCoreMaps {
   export *
   module * { export * }
 }
+module MapboxCoreMaps.Swift {
+  header "MapboxCoreMaps-Swift.h"
+  requires objc
+}

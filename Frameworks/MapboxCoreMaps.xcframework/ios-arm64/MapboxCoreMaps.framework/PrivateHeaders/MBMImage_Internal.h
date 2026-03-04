@@ -3,7 +3,11 @@
 #import <Foundation/Foundation.h>
 @class MBXDataRef;
 
-NS_SWIFT_NAME(Image)
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Image type.
+ */
+NS_SWIFT_NAME(__Image)
 __attribute__((visibility ("default")))
 @interface MBMImage : NSObject
 
