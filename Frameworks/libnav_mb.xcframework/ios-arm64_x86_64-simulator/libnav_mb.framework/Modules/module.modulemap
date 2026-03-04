@@ -1,6 +1,0 @@
-framework module libnav_mb {
-  umbrella header "libnav_mb.h"
-  export *
-
-  module * { export * }
-}
