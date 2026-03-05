@@ -22,33 +22,31 @@ let package = Package(
         // --- BEGIN BINARY TARGETS ---
         // Old targets will be deleted from here...
         // --- END BINARY TARGETS ---
-        
-        
         .target(
             name: "PenNav",
             dependencies: [
-//                "MapboxCommon",
-//                "MapboxCommonWrapper",
-//                "MapboxCoreMaps",
-//                "MapboxCoreMapsWrapper",
-//                "MapboxMaps",
-//                "pe_logic",
-//                "Penguin",
-//                "PenguinINRenderer",
-//                "PenNavUI",
-//                "Turf"
+                "MapboxCommon",
+                "MapboxCommonWrapper",
+                "MapboxCoreMaps",
+                "MapboxCoreMapsWrapper",
+                "MapboxMaps",
+                "pe_logic",
+                "Penguin",
+                "PenguinINRenderer",
+                "PenNavUI",
+                "Turf"
             ]
         ),
         .target(
             name: "PenNavRoaming",
             dependencies: [
-//                "_MapboxNavigationHelpers",
-//                "_MapboxNavigationLocalization",
-//                "libnav_mb",
-//                "MapboxDirections",
-//                "MapboxNavigationCore",
-//                "MapboxNavigationNative",
-//                "MapboxNavigationUIKit"
+                "_MapboxNavigationHelpers",
+                "_MapboxNavigationLocalization",
+                "libnav_mb",
+                "MapboxDirections",
+                "MapboxNavigationCore",
+                "MapboxNavigationNative",
+                "MapboxNavigationUIKit"
             ]
         )
     ]
