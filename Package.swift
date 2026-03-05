@@ -20,7 +20,6 @@ let package = Package(
     ],
     targets: [
         // --- BEGIN BINARY TARGETS ---
-        // Old targets will be deleted from here...
         // --- END BINARY TARGETS ---
         .target(
             name: "PenNav",
