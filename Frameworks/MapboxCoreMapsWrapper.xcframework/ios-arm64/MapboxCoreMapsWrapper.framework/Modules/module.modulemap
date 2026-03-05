@@ -1,5 +1,0 @@
-framework module MapboxCoreMapsWrapper {
-    header "MapboxCoreMapsWrapper-Swift.h"
-    export *
-    link framework "MapboxCoreMaps"
-}

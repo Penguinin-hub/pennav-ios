@@ -1,5 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '/Users/fawzialrifai/Downloads/mapbox-navigation-ios-3.18.0/.build/scipio/DerivedData/Products/Release-iphoneos/MapboxCoreMapsWrapper.framework/MapboxCoreMapsWrapper'
-relocations:     []
-...

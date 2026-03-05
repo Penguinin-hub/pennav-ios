@@ -1,5 +1,0 @@
-framework module MapboxCommonWrapper {
-    header "MapboxCommonWrapper-Swift.h"
-    export *
-    link framework "MapboxCommon"
-}
