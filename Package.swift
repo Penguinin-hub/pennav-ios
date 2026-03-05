@@ -22,87 +22,87 @@ let package = Package(
         .binaryTarget(
             name: "MapboxCommon",
             url: "https://github.com/penguinin-hub/pennav-ios/releases/download/1.0.8/MapboxCommon.xcframework.zip",
-            checksum: "ebdd4aad3b17324d72c8b08c7302b02a1ad70f2dd5ef07b535c9576e24a591d9"
+            checksum: "a999c74b6bd132d733eda540b1bf2d9b7871d58162f650198e6fbc8ccbb29609"
         ),
         .binaryTarget(
             name: "MapboxCommonWrapper",
             url: "https://github.com/penguinin-hub/pennav-ios/releases/download/1.0.8/MapboxCommonWrapper.xcframework.zip",
-            checksum: "40c6a72cd29f36c17c9acc09e4c62dfec50ef938b16fbbf21a27ea63bd4e2934"
+            checksum: "3ca7f7de8223934dc5fe6b3f4b9b4befa30552eaf4031fb42a8bd9af24099e0a"
         ),
         .binaryTarget(
             name: "MapboxCoreMaps",
             url: "https://github.com/penguinin-hub/pennav-ios/releases/download/1.0.8/MapboxCoreMaps.xcframework.zip",
-            checksum: "3124ece5bf94709c2aafc1e03e25f59ad6621bc723890cc1d3f7752d4e210f9d"
+            checksum: "c3f07892e1b3ce35f2b81cc164d30d14269cdc8b17f3e5217d9ff47b604c327b"
         ),
         .binaryTarget(
             name: "MapboxCoreMapsWrapper",
             url: "https://github.com/penguinin-hub/pennav-ios/releases/download/1.0.8/MapboxCoreMapsWrapper.xcframework.zip",
-            checksum: "bea9a3689e795600aacf9a698ee50bef2a930b219d770f5b6afaa7e9d26065be"
+            checksum: "009138544d4d4bd73a8443022571452abf6ff552053e7e14fdd90fe5c9357062"
         ),
         .binaryTarget(
             name: "MapboxDirections",
             url: "https://github.com/penguinin-hub/pennav-ios/releases/download/1.0.8/MapboxDirections.xcframework.zip",
-            checksum: "47026c9f038562bb2c8b4a83bdae1864a78f687d3ef61e2a19fbc902a8808f2a"
+            checksum: "9c9777523e0a0e4a701831aa2bfd86fd587c1bf6793be327b18f3f5976171f1b"
         ),
         .binaryTarget(
             name: "MapboxMaps",
             url: "https://github.com/penguinin-hub/pennav-ios/releases/download/1.0.8/MapboxMaps.xcframework.zip",
-            checksum: "6e289758dd4bccf3f1f68959524b144536fbe4f34424e8482e5d089ce43fbbd4"
+            checksum: "7a69db67503102a764ec6f500f8839d68a4f46aae7e19c37a1088eed0a5c4adf"
         ),
         .binaryTarget(
             name: "MapboxNavigationCore",
             url: "https://github.com/penguinin-hub/pennav-ios/releases/download/1.0.8/MapboxNavigationCore.xcframework.zip",
-            checksum: "cf6af824dc01ec69794f260fd6c3e943a11b6c5fea927bc6a0b61ba7481747aa"
+            checksum: "f06b79af92d298e7c09ef5126d001421453025c52abef7cbb7e26a0f80677c30"
         ),
         .binaryTarget(
             name: "MapboxNavigationNative",
             url: "https://github.com/penguinin-hub/pennav-ios/releases/download/1.0.8/MapboxNavigationNative.xcframework.zip",
-            checksum: "846eb8bb92e395df724f7dcc7e37feaf1afa65466a351eb3fe7bfa721fb669de"
+            checksum: "72f9d33a8440476270e29e59a955e43614cc5035898f582cc86a13b2f25390ef"
         ),
         .binaryTarget(
             name: "MapboxNavigationUIKit",
             url: "https://github.com/penguinin-hub/pennav-ios/releases/download/1.0.8/MapboxNavigationUIKit.xcframework.zip",
-            checksum: "c2e1a6f0715ebc20246c23298fc6bd49eea5cc5a4fa2b8f8a7e06f56f606f6ca"
+            checksum: "0a646514816f8145751eb841042b87522216496e7c188daaf0a3744ca57928aa"
         ),
         .binaryTarget(
             name: "PenNavUI",
             url: "https://github.com/penguinin-hub/pennav-ios/releases/download/1.0.8/PenNavUI.xcframework.zip",
-            checksum: "a7a6c11146dc9eaf1298c2fd3986ef774e1b86c0847e70b77bc7a1e42f1fdee6"
+            checksum: "9dbe0842c11b651757ab9461ee7e7611793474e3c8f655393372b493d3dd6979"
         ),
         .binaryTarget(
             name: "Penguin",
             url: "https://github.com/penguinin-hub/pennav-ios/releases/download/1.0.8/Penguin.xcframework.zip",
-            checksum: "e13c1b4d403465116330df1c9977eb5f93d449e3d42997baffa4adfe9061ad77"
+            checksum: "b174dbfbe5447c2fb735a9f70cf03d075e8d9f7911ec5db433da3b4e6044023b"
         ),
         .binaryTarget(
             name: "PenguinINRenderer",
             url: "https://github.com/penguinin-hub/pennav-ios/releases/download/1.0.8/PenguinINRenderer.xcframework.zip",
-            checksum: "2445e13c091a75218a57b9b44acadd44c86316f8393e11d90b17ef345e979add"
+            checksum: "955d0651a13bcd85c2de00ecaa7829310daded1e2d5d6a7761fb0ea307b4d7a2"
         ),
         .binaryTarget(
             name: "Turf",
             url: "https://github.com/penguinin-hub/pennav-ios/releases/download/1.0.8/Turf.xcframework.zip",
-            checksum: "809ff5ba011a4a230f4cf072e1d92f680f01a6f0b50f4089d70489fc7d01aea6"
+            checksum: "1cea999ded3fc0890c2fbf38fca4e632d1af9fff987821a8b5b81a26f2153f8e"
         ),
         .binaryTarget(
             name: "_MapboxNavigationHelpers",
             url: "https://github.com/penguinin-hub/pennav-ios/releases/download/1.0.8/_MapboxNavigationHelpers.xcframework.zip",
-            checksum: "ab6a268fc383b63aed5461234e089ebffab0333ebb09ac1f20d6928b2a24ddd6"
+            checksum: "40a57dcfe2d487cda87182815fefd8698f6dec18c5a61599e6396f01f14da3a1"
         ),
         .binaryTarget(
             name: "_MapboxNavigationLocalization",
             url: "https://github.com/penguinin-hub/pennav-ios/releases/download/1.0.8/_MapboxNavigationLocalization.xcframework.zip",
-            checksum: "38e90fc86f2203facfdbecd1e5a5dd03376a6aaab1188416f12a1894cf3b584c"
+            checksum: "c6fa585be1f54173cdc97db371cfeb13002d44892a90c0959149d4ba42197f49"
         ),
         .binaryTarget(
             name: "libnav_mb",
             url: "https://github.com/penguinin-hub/pennav-ios/releases/download/1.0.8/libnav_mb.xcframework.zip",
-            checksum: "e680704051cbd6a84c989f884d6b7e6a2c306eb74dfa26486bfb4240ae51ed22"
+            checksum: "01acb19838ea1e3eeda600d0f5599a57c7285210acbce5e209e204d4673635fb"
         ),
         .binaryTarget(
             name: "pe_logic",
             url: "https://github.com/penguinin-hub/pennav-ios/releases/download/1.0.8/pe_logic.xcframework.zip",
-            checksum: "2feadc3ccb2d6d6e28c1a7f6f5ab2fd5277f07a44f7b016bbb527fade6477e19"
+            checksum: "3a34337b0c74e8e91d526fe97ab680409c36d9de56d3c56ef29159ace6167f65"
         ),
         .target(
             name: "PenNav",
