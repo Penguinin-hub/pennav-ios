@@ -1,5 +1,5 @@
 // swift-tools-version: 6.1
-// github-repository: https://github.com/Penguinin-hub/pennav-ios
+// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
