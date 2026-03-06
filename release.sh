@@ -1,11 +1,10 @@
 #!/bin/bash
 set -e
 
-# Fix for dragging and dropping
 cd "$(dirname "$0")"
 
 if [ -z "$1" ]; then
-    echo "Usage: ./release.sh <version-tag> (e.g., 1.0.23)"
+    echo "Usage: ./release.sh <version-tag>"
     exit 1
 fi
 
@@ -32,7 +31,7 @@ cd ..
 
 # --- STEP 2: Initial Upload ---
 # We create a draft or a temporary release to get URLs without "finishing" the tag yet
-echo "Step 2: Preparing GitHub Release..."
+echo "Step 2: Preparing release..."
 gh release create "$VERSION" --repo "$REPO" --title "Release $VERSION" --notes "Uploading assets..." || echo "Release exists, continuing..."
 
 echo "Step 3: Uploading frameworks..."
@@ -42,7 +41,7 @@ echo "Step 4: Cleaning up local zip files..."
 rm "$FRAMEWORKS_DIR"/*.xcframework.zip
 
 # --- STEP 5: Data Collection ---
-echo "Step 5: Fetching Authenticated API URLs..."
+echo "Step 5: Fetching release assets..."
 # We fetch the assets and parse the apiUrl directly
 RELEASE_JSON=$(gh release view "$VERSION" --repo "$REPO" --json assets)
 TEMP_TARGETS=$(mktemp)
@@ -88,7 +87,7 @@ mv "${PACKAGE_FILE}.new" "$PACKAGE_FILE"
 rm "$TEMP_TARGETS"
 
 # --- STEP 7: Atomic Tagging (The Critical Fix) ---
-echo "Step 7: Finalizing Git and Tagging..."
+echo "Step 7: Finalizing release..."
 git add "$PACKAGE_FILE"
 
 # 1. Commit and push the code first
