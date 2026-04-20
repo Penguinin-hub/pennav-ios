@@ -32,27 +32,27 @@ let package = Package(
         // --- BEGIN BINARY TARGETS ---
         .binaryTarget(
             name: "libnav_mb",
-            url: "https://api.github.com/repos/Penguinin-hub/pennav-ios/releases/assets/400724163.zip",
-            checksum: "83c4bce906daf95665106719527c8cf42db0771021388c8cebf992f1ebfdb836"
+            url: "https://api.github.com/repos/Penguinin-hub/pennav-ios/releases/assets/400737048.zip",
+            checksum: "a77bda75dc082e07ac4ff7347e8d599d213a39ca5e19301e9a345b0da0111bb3"
         ),
         .binaryTarget(
             name: "Penguin",
-            url: "https://api.github.com/repos/Penguinin-hub/pennav-ios/releases/assets/400724161.zip",
-            checksum: "1c512d46abea2e28ceff7d87796bee15fd332e7d24ab300982a42fc67bde7745"
+            url: "https://api.github.com/repos/Penguinin-hub/pennav-ios/releases/assets/400737054.zip",
+            checksum: "2a70d631854851573efcfe95047ac98ce20fbef37ba3c94d0dfc68c06b594389"
         ),
         .binaryTarget(
             name: "PenguinINRenderer",
-            url: "https://api.github.com/repos/Penguinin-hub/pennav-ios/releases/assets/400724165.zip",
-            checksum: "a47575cc5ce435ed0d8111605cf56b2eab09074898cf3f11dffc12c3d0b178e8"
+            url: "https://api.github.com/repos/Penguinin-hub/pennav-ios/releases/assets/400737050.zip",
+            checksum: "73b8f7d2531184860f95c75915352a81fdc2e4fb7450e201eecf2fd265c76362"
         ),
         .binaryTarget(
             name: "PenNavUI",
-            url: "https://api.github.com/repos/Penguinin-hub/pennav-ios/releases/assets/400724164.zip",
-            checksum: "f749481a9789cf7b6319234746f4f09b2bc7f55c9208aa8df525b0d70ad2eece"
+            url: "https://api.github.com/repos/Penguinin-hub/pennav-ios/releases/assets/400737049.zip",
+            checksum: "f260b47b17348d1ffecadf34503eaab9089927a19c9479274bb57f1f5c0e6c79"
         ),
         .binaryTarget(
             name: "pe_logic",
-            url: "https://api.github.com/repos/Penguinin-hub/pennav-ios/releases/assets/400724166.zip",
+            url: "https://api.github.com/repos/Penguinin-hub/pennav-ios/releases/assets/400737055.zip",
             checksum: "561cd4a7ae1f2d690853a585911ed9fe65e8cb1bc7a9c5db204c5123b5958577"
         ),
         // --- END BINARY TARGETS ---
